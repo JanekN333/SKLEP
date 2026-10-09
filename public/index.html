@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SKLEP – wideo Seedance</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 16px; }
+  textarea, input, select, button { font: inherit; width: 100%; margin: .3rem 0 .8rem; padding: .5rem; box-sizing: border-box; }
+  video { width: 100%; margin-top: 1rem; }
+  #status { color: #555; }
+</style>
+</head>
+<body>
+<h1>Wideo produktu (Seedance 2.5)</h1>
+<form id="f">
+  <label>Opis wideo<textarea name="prompt" rows="3" required placeholder="Kamera powoli obraca się wokół butelki perfum na marmurowym blacie, miękkie światło"></textarea></label>
+  <label>URL zdjęcia produktu (opcjonalnie)<input name="imageUrl" type="url"></label>
+  <label>Rozdzielczość<select name="resolution"><option>480p</option><option selected>720p</option><option>1080p</option></select></label>
+  <label>Długość (s)<input name="duration" type="number" min="3" max="12" value="5"></label>
+  <label>Proporcje<select name="ratio"><option>16:9</option><option>9:16</option><option>1:1</option></select></label>
+  <button>Generuj</button>
+</form>
+<p id="status"></p>
+<video id="v" controls hidden></video>
+<script>
+const f = document.getElementById('f'), status = document.getElementById('status'), v = document.getElementById('v');
+f.onsubmit = async (e) => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(f));
+  data.duration = Number(data.duration);
+  if (!data.imageUrl) delete data.imageUrl;
+  v.hidden = true; status.textContent = 'Wysyłam…';
+  const r = await fetch('/api/video', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+  const { id, error } = await r.json();
+  if (error) return status.textContent = 'Błąd: ' + error;
+  const poll = async () => {
+    const t = await (await fetch('/api/video/' + id)).json();
+    if (t.status === 'succeeded') { status.textContent = 'Gotowe'; v.src = t.videoUrl; v.hidden = false; }
+    else if (t.status === 'failed' || t.status === 'cancelled' || t.error) status.textContent = 'Błąd: ' + (t.error || t.status);
+    else { status.textContent = 'Generuję… (' + t.status + ')'; setTimeout(poll, 5000); }
+  };
+  poll();
+};
+</script>
+</body>
+</html>
