@@ -1,6 +1,6 @@
 // Klient Seedance (ByteDance) przez API ModelArk: zadanie asynchroniczne, potem odpytywanie statusu.
 const BASE_URL = (process.env.ARK_BASE_URL || 'https://ark.ap-southeast.bytepluses.com/api/v3').replace(/\/$/, '');
-const MODEL = process.env.SEEDANCE_MODEL || 'seedance-2-5';
+const MODEL = process.env.SEEDANCE_MODEL || 'dreamina-seedance-2-5-260628';
 
 async function ark(path, init = {}) {
   const key = process.env.ARK_API_KEY;
