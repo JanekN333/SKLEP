@@ -127,3 +127,8 @@ jako custom connector „Esteban”, Miro):
    2s), the two-hand selfie with the dog's head coming out and looking at camera (4s), petting (trimmed to 3s).
    One hiccup handled: set 2's dog-in clip got a false content flag; I reworded and regenerated it.”
 6. Montaż końcowy w CapCut (poza Claude).
+
+## Trzeci skill: reel-casting (decyzja użytkownika 03.11)
+W filmie autor szuka awatara i teł ręcznie na Pintereście. Użytkownik chce osobny skill, który analizuje rolkę
+konkurencji, pisze brief lepszego awatara i teł i generuje warianty w Higgsfield (bez Pinteresta) → wybór →
+`casting.json` → reel-replicate. Opcjonalnie porównanie z konkurencją przez virality_predictor.
