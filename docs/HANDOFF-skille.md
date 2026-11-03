@@ -93,3 +93,37 @@ Obok lista B-rolli z długościami, np.:
 - W „Default” zablokowane: youtube.com, googlevideo.com, ytimg.com, tiktok.com, instagram.com, huggingface.co,
   elevenlabsusercontent.com. Środowisko „ez” ma mieć odblokowane domeny wideo – sprawdź na starcie (`curl`).
 - Do pobierania z linków: `pip install yt-dlp`; ffmpeg jest zainstalowany.
+
+## Film 2 – obejrzany 03.11 (YouTube ngdVTWySo8I, ten sam tytuł, 12:36; demo 4:20–10:50)
+Przepływ pokazany w Claude desktop (Fable 5 High, konektory: Higgsfield MCP `https://mcp.higgsfield.ai/mcp`
+jako custom connector „Esteban”, Miro):
+1. Pobranie rolki konkurencji (SnapInsta) → wrzucenie do Claude + „extract all the images” → 15 klatek,
+   contact sheet, Frame 01–15 PNG (wynik jak w filmie 1).
+2. Wgranie: awatar (Pinterest „25 years old woman”), wariant produktu (zielona bluza z chihuahua), 5 teł
+   (sypialnie/salony z Pinteresta). Prompt: „Do All the frame except frame: 4,7,8,12,15. And use the skill reel
+   replicator to swap it for my avatar in image 1 … my color variant in image 2 and then Do all the frame 5 times
+   once for background N1 … then 2, 3, 4, 5”.
+3. Wynik (Nano Banana Pro, 9:16, galeria `show_generation_by_ids`): „All 60 frames… Each set now has 12 beats,
+   numbered by the last two digits: 01 shocked hook, 02 cup drop, 03 whip pan, 05 product rack — all in-store —
+   then in the room: 06 cradling the dog, 07 (new) dog climbing into the pouch, 09 (fixed) zipping with the dog's
+   face in the hole, 10 peek close-up, 11 head fully out, 12 (new) extreme tight close-up, 13 head in profile,
+   14 seated petting.” „What I locked down this round: every prompt pins the woman to your exact avatar reference
+   (five spot-checks…), the missing beats were generated directly from the reference frames so the camera angles
+   copy them…” „Set guide: 100s = original clothing store + city-view bedroom, 200s = superstore + mountain bedroom,
+   300s = department store + wood-ceiling bedroom, 400s = boutique + fireplace living room, 500s = pet-supply
+   store + open great room.” „Go through the gallery — if any single frame is off, give me its number and I'll
+   re-roll just that one. When you're happy, tell me which set to animate…”
+   → hook w sklepie też dostaje inny typ sklepu na zestaw (Claude sam je wymyślił).
+4. „can you put all these images inside my miro board” → „All 60 images are now on your AI Video Dropshipping
+   board… 5 rows, one per set…, 12 beats left to right in reel order. Each image is titled with its set and beat
+   (e.g. "S3-09 zip + dog in hole")”. Użytkownik ręcznie usuwa złe klatki, układa „Hook 0-4sec | brolls 4-16 sec”,
+   dopisuje prompt hooka (szablon wyżej) i opisy 4 B-rolli z długościami.
+5. Zrzut tablicy + ponownie oryginalna rolka + „generate all the videos. So you judge how many different clip per
+   video…” → „Three submissions got intercepted by a preset recommendation — declining it and resubmitting…”
+   → „All done — 25 clips generated with Seedance 2.0 and delivered as 5 stitched reels (one per set, ~17s each,
+   720p 9:16 with native audio). Hook = single continuous 4s shot driven by your written hook prompt, with your
+   shocked frame as the start frame and your rack frame as the end frame… (I frame-checked set 1…). Then the four
+   b-rolls follow your notes: dog getting into the pouch (4s), zipping with the dog's face in the hole (trimmed to
+   2s), the two-hand selfie with the dog's head coming out and looking at camera (4s), petting (trimmed to 3s).
+   One hiccup handled: set 2's dog-in clip got a false content flag; I reworded and regenerated it.”
+6. Montaż końcowy w CapCut (poza Claude).
