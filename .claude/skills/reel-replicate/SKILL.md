@@ -27,8 +27,10 @@ Collect (ask only for what is missing):
 5. **Backgrounds** 1…N (rooms etc.). Each background = one set = one finished reel.
 6. Optional: on-screen hook text / CTA to use, language of speech.
 
-If the user has no avatar/backgrounds yet (or wants better ones than the competitor), run the
-`reel-casting` skill first. If a `casting.json` exists, use its media_ids (avatar + extra angles,
+If the avatar or backgrounds are missing, do NOT start casting on your own — ask first:
+"I don't have an avatar/backgrounds yet — will you send your own, or should I run reel-casting
+(pick a better avatar and backgrounds than the competitor's)?" Run `reel-casting` only if the user chooses it.
+If the user asks for better ones than the competitor, that counts as choosing casting. If a `casting.json` exists, use its media_ids (avatar + extra angles,
 backgrounds, store variants) directly and skip uploading those references.
 
 Upload every reference to Higgsfield yourself: `media_upload` → PUT bytes with curl → `media_confirm`
