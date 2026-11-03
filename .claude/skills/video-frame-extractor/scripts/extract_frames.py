@@ -48,6 +48,9 @@ def scene_times(video, threshold):
 def grab(video, t, path):
     run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.3f}", "-i", video,
          "-frames:v", "1", path])
+    if not os.path.exists(path):  # seek past the last decodable frame -> take the final frame instead
+        run(["ffmpeg", "-v", "error", "-y", "-sseof", "-0.5", "-i", video,
+             "-update", "1", "-q:v", "1", path])
 
 
 def ahash(path, size=16):
