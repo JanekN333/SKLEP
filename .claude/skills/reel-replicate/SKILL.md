@@ -105,6 +105,10 @@ Medias: `start_image` (and `end_image` for the hook) with a job_id of the approv
 Higgsfield switches to `omni_reference` itself when images are attached. Durations 4–30 s.
 **Cheap test first:** one set at `480p` (≈12 kr / 4 s, ≈15 kr / 5 s; 720p ≈28 kr / 4 s), then remake the
 winner at 720p/1080p (or use `draft: true` and finalise the draft at 1080p). Quote total cost first.
+Measured prices (Plus plan): 4 s = 12 / 28 / 64 kr, 5 s = 15 / 35 / 80 kr for 480p / 720p / 1080p.
+`upscale_video` (provider `topaz`, 1080p, 9:16) has no cost preflight but cost **3 kr for a 5 s clip** (balance
+diff) — sharper edges, smoother skin, it cannot recover detail lost at 480p and outputs 24 fps. Never publish
+plain ffmpeg-scaled 480p; export the final reel at 1080x1920 (`--size 1080x1920`).
 Submit all sets with `generate_video_batch` (≤12 per call), `jobs_wait` (clips take ~5–8 min), one
 `show_generation_by_ids`. While clips render, prepare the voice-over (below).
 - If a submission comes back with a **preset recommendation instead of a job**, decline it and resubmit the
