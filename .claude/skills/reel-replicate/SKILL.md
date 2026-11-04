@@ -161,7 +161,13 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   prompts); 3) head + mask + hat in natural proportion to the body (no oversized heads), hats sit low on the head;
   4) **never two identical people in one clip** — the model likes to clone a face (same eyes, brows, skin, age)
   onto several people, very visible through eye openings. Give every character a distinct description (eye
-  colour, brows, age, skin tone, build) in every prompt and check eyes side by side in QA; reject clones.
+  colour, brows, age, skin tone, build) in every prompt and check eyes side by side in QA; reject clones;
+  5) **lighting must match the scene**: the product is lit by the same light as everything else (sun direction,
+  shadows, white balance, exposure) — darker in shade, brighter in sun; it must not look pasted in, over-bright
+  or flatly lit. Write it into every prompt ("lit by the same sunlight as the scene, matching shadows and colour
+  temperature") and check it in QA.
+- **When unsure, ask the user** (look, motion, which design, colours…) instead of guessing — they prefer a quick
+  question to a wasted generation.
 - **Product-fidelity QA is mandatory and done in close-up:** crop every masked/printed face at ≥2× and put it
   next to the product photos (a reference strip) before accepting a frame. Thumbnails hide wrong prints.
 - **Fixed design-per-character map** (write it on the board) and name it in every prompt, e.g. "orange jacket =
