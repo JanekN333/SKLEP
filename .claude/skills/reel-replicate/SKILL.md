@@ -154,6 +154,12 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   (a collage gives cartoon results), say "photo-real print on fabric, NOT a cartoon mask", and in video prompts
   "the printed face is fabric and never animates, blinks or talks". Check where accessories sit (goggles over
   the eye panel, not on the forehead).
+- **User's standing rules for masked characters** (apply in every image and video prompt):
+  1) a balaclava with a see-through eye panel and NO goggles must show the wearer's real eyes through the panel
+  ("the wearer's real human eyes are clearly visible through the sheer grey mesh eye panel") — never a blank
+  panel; 2) characters do not bob, nod or shake their heads in any scene (say "heads stay still" in video
+  prompts); 3) head + mask + hat in natural proportion to the body (no oversized heads), hats sit low on the head.
+- **No POV hands by default:** don't put the filmer's hands/sleeves in the foreground unless the user wants it.
 - **Continuity:** for the hook end frame pass the approved start frame's job_id as reference image 1
   ("keep the same place, table, people…") — start/end then animate cleanly.
 - **Fixing one detail:** re-roll with the rejected frame's job_id as reference image 1 + "edit, keep everything
