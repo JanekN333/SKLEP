@@ -159,6 +159,18 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   ("the wearer's real human eyes are clearly visible through the sheer grey mesh eye panel") — never a blank
   panel; 2) characters do not bob, nod or shake their heads in any scene (say "heads stay still" in video
   prompts); 3) head + mask + hat in natural proportion to the body (no oversized heads), hats sit low on the head.
+- **Product-fidelity QA is mandatory and done in close-up:** crop every masked/printed face at ≥2× and put it
+  next to the product photos (a reference strip) before accepting a frame. Thumbnails hide wrong prints.
+- **Fixed design-per-character map** (write it on the board) and name it in every prompt, e.g. "orange jacket =
+  image 2 toothless; black jacket + flag = image 3 grumpy with cigarette, NO mustache; navy hoodie = image 4
+  mustache". Always pass ALL product photos plus one approved close-up frame as the "eye/rim look" reference.
+- **"Edit, change only X" drifts other people** in group shots (each edit re-renders everyone). If an edit fixes
+  one person but breaks another, don't re-roll again: the edit keeps the layout pixel-aligned, so composite the
+  correct heads from the two versions with Pillow (feathered ellipse mask, check alignment with a diff image),
+  upload the composite (`media_upload` → PUT → `media_confirm`) and use that media_id as the start frame. Free.
+- When eyes must show through a see-through eye panel, say "THICK BLACK OVAL RIM around the eye opening, the
+  wearer's real eyes inside it" — "no goggles / eyes visible" alone makes the model drop the mask entirely.
+- Group shots from far away (full body) lose print fidelity; prefer knees-up framing for 3–4 people.
 - **No POV hands by default:** don't put the filmer's hands/sleeves in the foreground unless the user wants it.
 - **Continuity:** for the hook end frame pass the approved start frame's job_id as reference image 1
   ("keep the same place, table, people…") — start/end then animate cleanly.
@@ -181,4 +193,6 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   kept). Fix in two more updates: first `width` only (height follows the aspect, never send `height`), then
   `x`, `y`, `width` again so the top-left lands back in its slot.
 - When a frame grows, move the frames below it (update the frame `<g>` with `data-frame` + its rect).
-- Deleting widgets needs the user's OK; to replace, prefer swapping `href` on the existing image.
+- Deleting widgets needs the user's OK; to replace, prefer swapping `href` on the existing image (only public
+  https URLs work — Higgsfield `d2ol…` upload URLs are rejected; then place a new image on top via upload token).
+- Never send several `canvas_update_from_svg` calls in parallel for the same widgets — they conflict.
