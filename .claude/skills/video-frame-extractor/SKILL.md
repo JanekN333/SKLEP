@@ -27,7 +27,10 @@ near-identical neighbours (perceptual hash) → splits any beat longer than 2.5 
 always includes the first and the last frame. Outputs `frame_01.png…`, `frames.json`
 (`index, time, end, duration` per frame) and `contact_sheet.png` (4 columns, white bar with `N  T.Ts` above each frame).
 
-Tuning: too few frames → `--threshold 0.18 --max-gap 1.5`; too many → `--threshold 0.35 --dedupe 18`.
+Tuning: too few frames → `--threshold 0.15 --max-gap 1.6`; too many → `--threshold 0.35 --dedupe 18`.
+Fast in-shot reveals (blanket pulled off, box opened) are often NOT a scene cut: sample the hook densely
+(`ffmpeg -t 6 -i reel.mp4 -vf "fps=2.5,scale=240:-1,drawtext=text='%{pts\:flt}':...,tile=8x2"`) and add the
+reveal frame by hand as `frame_03b_reveal.png` (keep the original numbering).
 
 ## 3. Verify coverage (always — look at the images yourself)
 Open `contact_sheet.png` (and single frames when needed) and check:

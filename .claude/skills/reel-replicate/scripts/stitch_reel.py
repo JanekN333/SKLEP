@@ -3,10 +3,13 @@
 
 Usage:
     python3 stitch_reel.py OUT.mp4 clip1.mp4[:SECONDS] clip2.mp4[:SECONDS] ... [--size 720x1280] [--fps 30]
+                           [--vo voice.mp3 --vo-at 0.0 --vo-vol 1.6 --bg-vol 0.55]
 
 `:SECONDS` trims a clip to its first N seconds (e.g. a 4 s Seedance clip used as a 2 s b-roll -> zip.mp4:2).
 Every clip is scaled/cropped to the same size and fps; clips without audio get silence, so native
 Seedance audio is kept where it exists.
+--vo mixes a voice-over (e.g. an ElevenLabs countdown) on top, starting at --vo-at seconds;
+the clips' natural audio is lowered to --bg-vol under it.
 """
 import argparse
 import json
@@ -26,6 +29,10 @@ def main():
     ap.add_argument("clips", nargs="+")
     ap.add_argument("--size", default="720x1280")
     ap.add_argument("--fps", type=int, default=30)
+    ap.add_argument("--vo", help="voice-over audio file to mix on top")
+    ap.add_argument("--vo-at", type=float, default=0.0, help="voice-over start time in seconds")
+    ap.add_argument("--vo-vol", type=float, default=1.6)
+    ap.add_argument("--bg-vol", type=float, default=0.55)
     a = ap.parse_args()
     w, h = a.size.split("x")
 
@@ -49,6 +56,15 @@ def main():
             filters.append(f"anullsrc=r=44100:cl=stereo,atrim=0:{dur}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
     filters.append("".join(labels) + f"concat=n={len(a.clips)}:v=1:a=1[v][a]")
+    if a.vo:
+        vi = len(a.clips)
+        inputs += ["-i", a.vo]
+        delay = int(a.vo_at * 1000)
+        filters[-1] = filters[-1].replace("[v][a]", "[v][acat]")
+        filters.append(f"[acat]volume={a.bg_vol}[bg]")
+        filters.append(f"[{vi}:a]aresample=44100,aformat=channel_layouts=stereo,volume={a.vo_vol},"
+                       f"adelay={delay}|{delay}[vo]")
+        filters.append("[bg][vo]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
     cmd = ["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(filters),
            "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-preset", "medium",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", a.out]

@@ -100,9 +100,13 @@ pacing. Decide clip split per reel yourself:
   hand grabs one). Native audio ON (gasp + store ambience only, no music/SFX).
 - **B-rolls** = one clip per note, start frame = the matching kept frame, duration from the note
   (generate the model's minimum length and trim, e.g. 4 s → 2 s).
-Model: **`seedance_2_5`** (user's choice; check durations/resolutions with `models_explore`). Draft 720p, 9:16,
-audio on. Quote total cost first. Submit all sets with `generate_video_batch` (≤12 per call), `jobs_wait`,
-one `show_generation_by_ids`.
+Model: **`seedance_2_5`** (user's choice; check durations/resolutions with `models_explore`). 9:16, audio on.
+Medias: `start_image` (and `end_image` for the hook) with a job_id of the approved frame; leave `mode` out —
+Higgsfield switches to `omni_reference` itself when images are attached. Durations 4–30 s.
+**Cheap test first:** one set at `480p` (≈12 kr / 4 s, ≈15 kr / 5 s; 720p ≈28 kr / 4 s), then remake the
+winner at 720p/1080p (or use `draft: true` and finalise the draft at 1080p). Quote total cost first.
+Submit all sets with `generate_video_batch` (≤12 per call), `jobs_wait` (clips take ~5–8 min), one
+`show_generation_by_ids`. While clips render, prepare the voice-over (below).
 - If a submission comes back with a **preset recommendation instead of a job**, decline it and resubmit the
   same direct request (say "N submissions got intercepted by a preset recommendation — declining and resubmitting").
 - If a clip gets a **false content flag** (common with pets/kids), reword neutrally and regenerate that one.
@@ -110,10 +114,18 @@ one `show_generation_by_ids`.
   hand grabs the product, face stays the avatar.
 
 ## Stage 5 — Stitch & deliver
-Download clips (`curl -L -o`), then per set:
+Download clips (`curl -L -o`), contact-sheet each one (`ffmpeg -vf fps=2.4,scale=200:-1,tile=6x2`) and check
+motion, product print and that nothing animates that must not (printed faces, logos). Then per set:
 ```bash
-python3 <skill_dir>/scripts/stitch_reel.py reel_set1.mp4 s1_hook.mp4 s1_b1.mp4:4 s1_b2.mp4:2 s1_b3.mp4:4 s1_b4.mp4:3
+python3 <skill_dir>/scripts/stitch_reel.py reel_set1.mp4 s1_hook.mp4 s1_b1.mp4:3 s1_b2.mp4:2 s1_b3.mp4:2.5 s1_b4.mp4:2 \
+    [--vo countdown.mp3 --vo-at 0]
 ```
+`:N` keeps the first N seconds — choose N so the best part of the clip is inside it.
+**Voice-over (ElevenLabs, when the user wants a spoken hook):** `creative_list_voices` (language + age filter),
+`creative_generate_speech` with `eleven_v4` and audio tags, e.g.
+`[excited whisper] Trzy... [whispering, giggling] dwa... [shouting excitedly] JEDEN!` (2 takes ≈ 83 EL credits each).
+Find word timings with `ffmpeg -af silencedetect=n=-35dB:d=0.15` and pick the take whose key word lands on the
+visual beat (e.g. "JEDEN" at the blanket pull ≈ 2.6 s); mix with `--vo`. You cannot listen — tell the user to.
 Deliver N stitched reels (~16–17 s, 720×1280) + individual clips, and a summary:
 > All done — 25 clips generated with Seedance and delivered as 5 stitched reels (one per set, ~17s each, 720p 9:16
 > with native audio). How each reel is built: hook = …; then the four b-rolls follow your notes: … (trimmed to 2s) …
@@ -121,3 +133,41 @@ Deliver N stitched reels (~16–17 s, 720×1280) + individual clips, and a summa
 > the reels or the individual clips onto your Miro board.
 Optional: upscale/finalise chosen reels at 1080p (ask, costs credits); voice-over with ElevenLabs if asked.
 Final edit (text overlay, music, transitions) is usually done by the user in CapCut — offer the hook text/CTA.
+Do not leave deliverables inside the git repo (no stray `output/` folders); keep them in the scratchpad and send them.
+
+## Practical notes (learned in real runs)
+- **Ask for the brief first, then build the Miro plan before spending anything** (user's preference): original
+  frames, materials (product, avatars, background), shot plan with empty start-frame slots, hook prompt,
+  audio/cost box. Generate only after "akceptuję".
+- **Localisation:** for a Polish audience add Polish accents on request (flag as a cape, white-eagle scarf,
+  highlander plaid blanket, oscypek + mulled wine, parzenica sweater, góral hat) and replace foreign text on
+  clothes (e.g. "St. Moritz") — say it explicitly in every prompt, the model copies text from avatar photos.
+- **Night background but product must be visible:** offer day vs evening; a night reference can be used as a
+  *place* reference with "on a bright sunny day".
+- **Avatar photos of real people:** say once that using a real person's face in an ad without consent is risky;
+  the user decides.
+- **Product with a printed face/graphic** (balaclavas, T-shirts): pass each product variant as its own reference
+  (a collage gives cartoon results), say "photo-real print on fabric, NOT a cartoon mask", and in video prompts
+  "the printed face is fabric and never animates, blinks or talks". Check where accessories sit (goggles over
+  the eye panel, not on the forehead).
+- **Continuity:** for the hook end frame pass the approved start frame's job_id as reference image 1
+  ("keep the same place, table, people…") — start/end then animate cleanly.
+- **Fixing one detail:** re-roll with the rejected frame's job_id as reference image 1 + "edit, keep everything
+  the same, only change X" (2 kr, the rest stays identical).
+- Higgsfield may show `nano_banana_2` as the model for `nano_banana_pro` jobs — the cost matches the quote.
+- A batch item may fail with "Out of credits" while the balance is fine: no job was created, so resubmit just
+  that item.
+- Seedance often makes a "dance" too subtle at full-body distance — describe big, concrete moves and frame
+  closer (knees up) for dance b-rolls. Very fast reveals can happen between two frames — describe the pull
+  as "over 0.5 s" if it should be visible.
+
+### Miro mechanics
+- Load `canvas_get_canvas_composer_skill` (no step → `design` → `dsl`; the dsl reply is long, read it from the
+  saved file with jq). Frames: `<g data-frame>` + background rect; children use frame-relative coords.
+- Images: `image_create` with `image_url` (Higgsfield result URLs are public) and `moveToWidget=<frameId>`;
+  x/y = image **centre**, relative to the frame. For many local images build one composite strip with Pillow
+  and upload it once (`image_get_upload_url` → curl PUT → `image_create(token)`).
+- Swapping an image via `canvas_update_from_svg` `href` resets it to natural size — send a second update with
+  `x`, `y`, `width` to restore the footprint.
+- When a frame grows, move the frames below it (update the frame `<g>` with `data-frame` + its rect).
+- Deleting widgets needs the user's OK; to replace, prefer swapping `href` on the existing image.
