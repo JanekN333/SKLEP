@@ -9,7 +9,7 @@ Usage:
 Every clip is scaled/cropped to the same size and fps; clips without audio get silence, so native
 Seedance audio is kept where it exists.
 --vo mixes a voice-over (e.g. an ElevenLabs countdown) on top, starting at --vo-at seconds;
-the clips' natural audio is lowered to --bg-vol under it.
+the clips' natural audio is lowered to --bg-vol under it (and to --duck-vol until --duck-until seconds).
 """
 import argparse
 import json
@@ -33,6 +33,9 @@ def main():
     ap.add_argument("--vo-at", type=float, default=0.0, help="voice-over start time in seconds")
     ap.add_argument("--vo-vol", type=float, default=1.6)
     ap.add_argument("--bg-vol", type=float, default=0.55)
+    ap.add_argument("--duck-until", type=float, default=0.0,
+                    help="lower the clips' audio to --duck-vol until this second (so the voice-over is clear)")
+    ap.add_argument("--duck-vol", type=float, default=0.2)
     a = ap.parse_args()
     w, h = a.size.split("x")
 
@@ -61,7 +64,10 @@ def main():
         inputs += ["-i", a.vo]
         delay = int(a.vo_at * 1000)
         filters[-1] = filters[-1].replace("[v][a]", "[v][acat]")
-        filters.append(f"[acat]volume={a.bg_vol}[bg]")
+        if a.duck_until > 0:
+            filters.append(f"[acat]volume='if(lt(t,{a.duck_until}),{a.duck_vol},{a.bg_vol})':eval=frame[bg]")
+        else:
+            filters.append(f"[acat]volume={a.bg_vol}[bg]")
         filters.append(f"[{vi}:a]aresample=44100,aformat=channel_layouts=stereo,volume={a.vo_vol},"
                        f"adelay={delay}|{delay}[vo]")
         filters.append("[bg][vo]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
