@@ -166,6 +166,13 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   shadows, white balance, exposure) — darker in shade, brighter in sun; it must not look pasted in, over-bright
   or flatly lit. Write it into every prompt ("lit by the same sunlight as the scene, matching shadows and colour
   temperature") and check it in QA.
+- **NO EXTRA MOVEMENT unless the user asks for it** (hard rule): characters do exactly the one action in the
+  brief and nothing else — no head shaking/nodding/bobbing, no waving or flapping arms/hands, no fidgeting,
+  trembling or random gestures, no "dance-like" filler. Seedance invents idle motion when a prompt lists several
+  verbs or words like "energetic / lean / move / bob" — write ONE calm action with a timeline, everything else
+  "holds still", e.g. "they hold the pose completely still, only the flag moves in the wind". Prefer locked-off
+  or very gentle handheld camera. QA video at 8 fps on the heads and hands (contact sheet of the head area) —
+  2 fps sheets hide shaking. Reject and redo clips with jitter before showing them to the user.
 - **When unsure, ask the user** (look, motion, which design, colours…) instead of guessing — they prefer a quick
   question to a wasted generation.
 - **Product-fidelity QA is mandatory and done in close-up:** crop every masked/printed face at ≥2× and put it
