@@ -177,7 +177,8 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
 - Images: `image_create` with `image_url` (Higgsfield result URLs are public) and `moveToWidget=<frameId>`;
   x/y = image **centre**, relative to the frame. For many local images build one composite strip with Pillow
   and upload it once (`image_get_upload_url` → curl PUT → `image_create(token)`).
-- Swapping an image via `canvas_update_from_svg` `href` resets it to natural size — send a second update with
-  `x`, `y`, `width` to restore the footprint.
+- Swapping an image via `canvas_update_from_svg` `href` resets it to natural size (and moves it, the centre is
+  kept). Fix in two more updates: first `width` only (height follows the aspect, never send `height`), then
+  `x`, `y`, `width` again so the top-left lands back in its slot.
 - When a frame grows, move the frames below it (update the frame `<g>` with `data-frame` + its rect).
 - Deleting widgets needs the user's OK; to replace, prefer swapping `href` on the existing image.
