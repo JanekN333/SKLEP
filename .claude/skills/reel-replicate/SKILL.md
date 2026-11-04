@@ -158,7 +158,10 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   1) a balaclava with a see-through eye panel and NO goggles must show the wearer's real eyes through the panel
   ("the wearer's real human eyes are clearly visible through the sheer grey mesh eye panel") — never a blank
   panel; 2) characters do not bob, nod or shake their heads in any scene (say "heads stay still" in video
-  prompts); 3) head + mask + hat in natural proportion to the body (no oversized heads), hats sit low on the head.
+  prompts); 3) head + mask + hat in natural proportion to the body (no oversized heads), hats sit low on the head;
+  4) **never two identical people in one clip** — the model likes to clone a face (same eyes, brows, skin, age)
+  onto several people, very visible through eye openings. Give every character a distinct description (eye
+  colour, brows, age, skin tone, build) in every prompt and check eyes side by side in QA; reject clones.
 - **Product-fidelity QA is mandatory and done in close-up:** crop every masked/printed face at ≥2× and put it
   next to the product photos (a reference strip) before accepting a frame. Thumbnails hide wrong prints.
 - **Fixed design-per-character map** (write it on the board) and name it in every prompt, e.g. "orange jacket =
