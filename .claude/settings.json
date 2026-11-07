@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "mcp__Miro"
+      "mcp__Miro",
+      "mcp__Miro__*",
+      "mcp__Miro__canvas_update_from_svg",
+      "mcp__Miro__canvas_create_from_svg",
+      "mcp__Miro__canvas_read_as_svg",
+      "mcp__Miro__image_create",
+      "mcp__Miro__image_get_upload_url",
+      "mcp__Miro__board_show",
+      "mcp__Miro__board_search_boards",
+      "mcp__Miro__canvas_get_canvas_composer_skill"
     ]
   }
 }
