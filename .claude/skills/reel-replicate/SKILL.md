@@ -209,6 +209,11 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
 - Colour jump: an end frame retouched separately has another grade, and Seedance shifts the whole picture
   towards it mid-clip (washed sky, redder). Measure mean RGB of the sky per frame; fix with
   `scripts/match_grade.py` (no new generation), or colour-match the end frame to the start frame BEFORE generating.
+- **End frame background must be pixel-identical to the start frame** (sky, mountains, table, shoes). If the end
+  frame came from separate edits, Seedance re-renders the whole background mid-clip (mountains change shape, the
+  shot seems to zoom, sky streaks). Fix before generating: diff the two frames, mask only what really changes
+  (cloth, people), colour-match that part to the start frame on a ring around the mask, and paste it onto the
+  start frame with a feathered edge.
 - Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
   model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
   paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).
