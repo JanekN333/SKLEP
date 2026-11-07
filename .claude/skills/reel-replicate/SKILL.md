@@ -139,6 +139,23 @@ Optional: upscale/finalise chosen reels at 1080p (ask, costs credits); voice-ove
 Final edit (text overlay, music, transitions) is usually done by the user in CapCut — offer the hook text/CTA.
 Do not leave deliverables inside the git repo (no stray `output/` folders); keep them in the scratchpad and send them.
 
+## MANDATORY pre-flight check before EVERY paid video generation (user's rule: don't waste credits)
+Run these on the start + end frames yourself, fix anything that fails, and only then quote the cost:
+1. **Background identical:** diff start vs end frame on sky/mountains and table/floor (mean abs diff, should be
+   ~0-3/255 outside the parts that really change). If not, composite the changing part onto the start frame.
+2. **Colour identical:** mean RGB + std of the static regions equal (±2); else colour-match before generating.
+3. **Feet / contact points:** every person stands/sits exactly above their own shoes, hands on surfaces, nothing
+   floating; same shoe positions in both frames.
+4. **Product fidelity:** close-up of every face vs `product_ref_strip.jpg` (design per person, no swaps, no
+   grey eye panels where goggles were asked for; real eyes visible if no goggles).
+5. **People:** no duplicates, no extra/missing people, natural head size, hats/goggles placed right, light and
+   shadows match the scene.
+6. **Timing plan:** write the beat timeline (e.g. hold 0-2.0 s, action 2.0-2.5 s, hold, cut) against the
+   voice-over / competitor rhythm before prompting; plan the cut so there is no dead stop-frame.
+7. **Prompt:** static camera if the shot is static, ONE action, "no speech", every person's still-ness spelled out.
+After generation always: 8 fps sheet (heads/hands), per-frame background diff + sky colour, whisper on the clip
+audio (replace any invented speech), then sync the VO to the real action frame. Report the checks to the user.
+
 ## Practical notes (learned in real runs)
 - **Ask for the brief first, then build the Miro plan before spending anything** (user's preference): original
   frames, materials (product, avatars, background), shot plan with empty start-frame slots, hook prompt,
