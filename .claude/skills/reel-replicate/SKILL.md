@@ -200,6 +200,8 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   as "over 0.5 s" if it should be visible.
 
 ### Miro mechanics
+- **Update the board automatically after EVERY change** (new frame, new clip, new prompt, new decision) without being
+  asked — the user must never have to remind you. Miro tools are pre-allowed in `.claude/settings.json`.
 - Load `canvas_get_canvas_composer_skill` (no step → `design` → `dsl`; the dsl reply is long, read it from the
   saved file with jq). Frames: `<g data-frame>` + background rect; children use frame-relative coords.
 - Images: `image_create` with `image_url` (Higgsfield result URLs are public) and `moveToWidget=<frameId>`;
