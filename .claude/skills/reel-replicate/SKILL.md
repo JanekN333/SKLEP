@@ -231,6 +231,12 @@ audio (replace any invented speech), then sync the VO to the real action frame. 
   shot seems to zoom, sky streaks). Fix before generating: diff the two frames, mask only what really changes
   (cloth, people), colour-match that part to the start frame on a ring around the mask, and paste it onto the
   start frame with a feathered edge.
+- **Realism of a reveal:** never stack edits/composites on the people (looks like slop). Generate the END
+  frame (people revealed) in ONE pass with strong realism wording (knit fabric folds, real goggles with
+  thickness/reflections, same sun + shadows, no HDR), 2-3 variants; then derive the START frame from it
+  ("one moment earlier, covered by the blanket") and lock its static background to the end frame with a
+  horizontal band mask. Teasing bounces on each count ("lift ~20 cm and drop" with explicit seconds) work in
+  Seedance 5 s; then place each VO word on the measured bounce/pull frames.
 - Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
   model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
   paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).
