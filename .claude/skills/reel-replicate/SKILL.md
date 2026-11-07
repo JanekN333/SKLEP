@@ -199,6 +199,17 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   closer (knees up) for dance b-rolls. Very fast reveals can happen between two frames — describe the pull
   as "over 0.5 s" if it should be visible.
 
+### Hook countdown sync (learned)
+- Measure the competitor hook first (whisper word timestamps + 6 fps sheet): e.g. "three" 0.0 s, "two" ~0.9 s,
+  "one" ~1.6 s, cloth pulled ~2.9 s, reveal held ~1.3 s, cut. Copy that rhythm; ~0.9-1.0 s between words.
+- Generate the hook video FIRST, find the frame where the pull starts (8 fps sheet), then place the voice-over so
+  the stressed "JEDEN" starts on that frame. Cut each word out of the VO take (drop giggles/pauses between words).
+- Seedance invents speech ("Cześć!") even with "no speech": transcribe the clip audio and replace speech parts with
+  a loop of its own quiet wind. Trim the hook ~1.2 s after the reveal - no dead stop-frame.
+- Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
+  model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
+  paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).
+
 ### Miro mechanics
 - **Update the board automatically after EVERY change** (new frame, new clip, new prompt, new decision) without being
   asked — the user must never have to remind you. Miro tools are pre-allowed in `.claude/settings.json`.
