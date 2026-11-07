@@ -206,6 +206,9 @@ Do not leave deliverables inside the git repo (no stray `output/` folders); keep
   the stressed "JEDEN" starts on that frame. Cut each word out of the VO take (drop giggles/pauses between words).
 - Seedance invents speech ("Cześć!") even with "no speech": transcribe the clip audio and replace speech parts with
   a loop of its own quiet wind. Trim the hook ~1.2 s after the reveal - no dead stop-frame.
+- Colour jump: an end frame retouched separately has another grade, and Seedance shifts the whole picture
+  towards it mid-clip (washed sky, redder). Measure mean RGB of the sky per frame; fix with
+  `scripts/match_grade.py` (no new generation), or colour-match the end frame to the start frame BEFORE generating.
 - Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
   model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
   paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).
