@@ -36,6 +36,8 @@ def main():
     ap.add_argument("--duck-until", type=float, default=0.0,
                     help="lower the clips' audio to --duck-vol until this second (so the voice-over is clear)")
     ap.add_argument("--duck-vol", type=float, default=0.2)
+    ap.add_argument("--lufs", type=float, default=-14.0,
+                    help="normalise the final mix to this loudness (social apps use ~-14 LUFS); 0 = off")
     a = ap.parse_args()
     w, h = a.size.split("x")
 
@@ -70,7 +72,13 @@ def main():
             filters.append(f"[acat]volume={a.bg_vol}[bg]")
         filters.append(f"[{vi}:a]aresample=44100,aformat=channel_layouts=stereo,volume={a.vo_vol},"
                        f"adelay={delay}|{delay}[vo]")
-        filters.append("[bg][vo]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]")
+        filters.append("[bg][vo]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[amix]")
+    else:
+        filters[-1] = filters[-1].replace("[v][a]", "[v][amix]")
+    if a.lufs:
+        filters.append(f"[amix]loudnorm=I={a.lufs}:TP=-1.5:LRA=11,aresample=44100[a]")
+    else:
+        filters.append("[amix]anull[a]")
     cmd = ["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", ";".join(filters),
            "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-preset", "medium",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", a.out]
