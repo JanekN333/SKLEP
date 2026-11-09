@@ -248,6 +248,9 @@ audio (replace any invented speech), then sync the VO to the real action frame. 
   design, printed details stay flat (printed cigarette is NOT a 3D cigarette), product specifics (mesh eye oval
   with black rim, printed goggle band on design A, brown stitched hem), real goggles over the fabric, light
   direction. Missing any of these cost re-rolls before.
+- **Pacing 1:1:** measure the competitor's hard cuts (`select=gt(scene,0.12)` + frame-diff peaks, then a 8-10 fps
+  sheet to tell cuts from whip-pans) and cut our clips to EXACTLY those durations; generate 4-5 s clips and trim.
+  Also note WHO holds the camera in each shot (POV, friend, selfie with the arm in frame, tripod) and copy it.
 - Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
   model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
   paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).
