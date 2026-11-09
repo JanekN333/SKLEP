@@ -35,6 +35,8 @@ Then list the **3–5 weaknesses to beat** (e.g. "beige hoodie on beige wall —
 Also list what **must stay** because it is why the reel works (the shock reaction, the in-store discovery, the reveal).
 
 ## 3. Casting brief
+**Cast only people whose face is actually visible in the reel.** People who appear only masked / in goggles /
+from behind need no casting: describe their outfit in the replicate prompts (saves credits; user rule).
 Turn the analysis into a brief and show it to the user before spending anything:
 - **Avatar** — age range, vibe (girl-next-door, clean-girl, cozy-mom…), hair, skin tone range, makeup level,
   outfit for the in-store hook (neutral colour that contrasts the product), body language. A fictional person —
