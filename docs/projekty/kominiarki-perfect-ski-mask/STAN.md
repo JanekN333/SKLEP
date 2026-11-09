@@ -41,3 +41,34 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
 - Miro P2-5: zaktualizowany status, dodany pasek z podglądu (item `3458764689862071178`).
 - Dalej: taniec (opcjonalnie), upscale do 1080p, finalna rolka.
 - Wydane na projekt 2: ok. 145 kr.
+
+## Aktualizacja 2026-11-09 po południu: H1 i H2 v3 (cięcie jak u konkurencji)
+- Uwagi użytkownika do v2:
+  - H1: czarne boki maski, potem krzywe krawędzie.
+  - H2: zakładał maskę od przodu, a w otworze był biały pas zamiast oczu.
+  - Pomiar u konkurencji: H2 ma cięcie w 3,00 s.
+- Klatki (Nano Banana Pro, łącznie 20 kr):
+
+  | Klatka | Job |
+  |---|---|
+  | H1 start | `7465a88e-c850-4d65-a6a7-94b248753f7b` (układ wg kadru konkurencji, media `65004a48`) |
+  | H1 koniec | `51ab00e6-fa41-469c-809d-91f3fdac45ce` |
+  | H2-1 start | `7ecb8c0f-4412-4471-a4e1-83d15d4a24f1` |
+  | H2-2 start | `0a180bfa-ed8a-48be-a8c8-f9dd9be1675d` |
+  | H2 środek (prawdziwe oczy) | `ab4cfdbc-5219-445e-8a7f-4296996127e3` |
+  | H2 koniec | `8f25129c` |
+
+- Klipy (Kling 3.0 std, 3 s, 24 kr):
+
+  | Klip | Job | Fragment w rolce |
+  |---|---|---|
+  | H1 | `fe179c8f-a0a6-48ec-a871-8784c2a520f5` | 0,3–2,8 s |
+  | H2-1 | `0944e172-1310-432e-be50-a692db3f959d` | 2,1–2,6 s |
+  | H2-2a | `ec97a737-b88e-4b1d-8738-26e267289213` | 0,35–1,75 s |
+  | H2-2b | `29e0c3a4-5f80-45b7-a73b-c2b8fd5216b6` | 0,8–2,6 s |
+
+- Podgląd v3: `podglad_1do1_480p.mp4`, 11,1 s, −13,8 LUFS.
+  - Kolejność: H1 2,5 / H2-1 0,5 / H2-2a 1,4 / H2-2b 1,8 / B1 1,3 / zjazd 2,0 / auto 1,5.
+  - Whisper: brak mowy.
+- Miro: uporządkowane. Aktualna wersja jest w P2-5 (pasek `3458764689876880846`), stare obrazy usunięte.
+- Wydane na projekt 2: ok. 189 kr.
