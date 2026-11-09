@@ -63,3 +63,15 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
 - Miro: ramka P3-2 `3458764689940976300`.
 - Klatki v2: poprawione 101 i 102 (realizm, światło, oczy, stroje). Klatki kosztowały łącznie 32 kr.
 - 102 v3: usunięty pasek materiału między oczami (otwór to jeden owal). Klatki kosztowały łącznie 34 kr.
+
+## Klipy v1 (Kling 3.0 std, 34 kr) i podgląd 480p (`podglad_480p.mp4`, 11,8 s, −14,8 LUFS)
+| Klip | Job | Fragment w rolce | Uwagi |
+|---|---|---|---|
+| K1 kolejka | `30537fed-ba17-4121-bbbd-4fd165f4eb00` | 0–1,5 s | dźwięk zastąpiony pętlą tła 0–1,2 s (Kling wymyślił „Thank you” od 1,26 s) |
+| K2 wejście | `6c175117-790e-43c0-946d-59227d611fbc` | 0–1,0 s | dźwięk zastąpiony pętlą 0–0,7 s („Thank you” od 0,72 s) |
+| K3 regał (103 → 103b) | `5f82e353-b23c-4acf-a089-f7f9ea2019b8` | 0,25–1,3 + 1,4–2,55 s | przeskok na inny regał w 1,4 s, bo 103 i 103b to różne stoiska |
+| K4 przemiana (104 → 105 nowa `6621c3e4`) | `7c5af37c-d068-4854-b175-c82db83f5fdc` | 0,34–5,04 s | |
+| K5 wyciąg (110 → 111) | `5fb8fea0-dec1-45e5-be19-d9f9e935603a` | 0,3–2,7 s | |
+
+- Poprawka K3 do decyzji: nowa klatka 103b z tego samego regału i nowy K3, razem 8 kr.
+- Miro: ramka P3-3 `3458764689942877574`.
