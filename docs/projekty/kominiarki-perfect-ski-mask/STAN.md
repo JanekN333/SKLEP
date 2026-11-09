@@ -26,3 +26,18 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
 - B2b taniec: `0f8ceb5f-80a5-41ef-9d2c-b7aa17fef7fc`
 - B3 auto na Krupówkach (decyzja użytkownika zamiast dorożki): `0e79c87d-6790-4317-9dd9-d94fa2bbba3c`
 - Wydano łącznie ok. 34 kr (casting 14 kr + klatki 20 kr).
+
+## Aktualizacja 2026-11-09: klipy v2 (Kling 3.0 std, 26 kr) i podgląd 1:1
+| Ujęcie | Job | Fragment w rolce |
+|---|---|---|
+| H1 POV z krzesełka | `dcd0533b-dba5-4b02-a029-1d744d681968` | 0,5–3,0 s |
+| H2 przemiana (start `89bd67ac`, koniec `8f25129c`) | `2d77afa3-e785-40f7-86fd-5bce4018a6b1` | 0,3–4,0 s |
+| B1 trójka | `9fb4abed-e646-4c37-b19a-68b45b497a61` | 0,5–1,8 s |
+| Zjazd, 3 postacie (start media `57bdafbe-35a5-4beb-8f11-06dd3e49d845`) | `f70f7fac-f7ff-4aa8-bc0c-88649b04383c` | 0,5–2,5 s |
+| Auto, selfie (Seedance) | `5f85f4ac-2669-473d-a4c1-67e48cee1302` | 0–1,5 s |
+
+- Kontrola jakości: wszystkie klipy OK, whisper bez mowy, B1 bez czaszek, w H2 oczy widoczne przed goglami.
+- Podgląd: `podglad_1do1_480p.mp4`, 11,1 s, −13 LUFS. Taniec pominięty.
+- Miro P2-5: zaktualizowany status, dodany pasek z podglądu (item `3458764689862071178`).
+- Dalej: taniec (opcjonalnie), upscale do 1080p, finalna rolka.
+- Wydane na projekt 2: ok. 145 kr.
