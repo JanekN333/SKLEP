@@ -87,3 +87,22 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
   - Klipy połączone we wspólnej klatce (różnica 1,8/255).
 - Rolka v6 ma 13,3 s, −13,9 LUFS, whisper bez mowy.
   - Cięcia: 2,5 / 3,0 (jak u konkurencji) / 6,8 / 8,2 / 10,2 / 11,8 s.
+
+## FINAŁ 2026-11-09: rolka 1080p gotowa
+- Wybrana wersja v5, sprzed łączenia H2-2, zgodnie z decyzją użytkownika. Poprawkę dłoni przy twarzy odpuszczono.
+- Upscale Topaz 1080p (9:16): 8 klipów po 3 kr, razem 24 kr.
+
+  | Klip | Job upscale |
+  |---|---|
+  | H1 | `2d10d0f8` |
+  | H2-1 | `6f6ad44b` |
+  | H2-2a | `4e4db417` |
+  | H2-2b | `c92c9ebf` |
+  | B1 | `17032352` |
+  | Zjazd | `a9e46335` |
+  | Taniec | `826ebced` (z Seedance `129021df`) |
+  | Auto | `9a1b859e` |
+
+- Plik: `rolka_final_1080p.mp4` (1080×1920, 12,8 s, −13,9 LUFS, whisper bez mowy).
+- Cięcia i fragmenty są takie same jak w podglądzie v5.
+- Projekt 2 kosztował łącznie ok. 213 kr.
