@@ -26,3 +26,38 @@ H&M to prawdziwa marka. Nie używamy jej nazwy ani logo, bo byłaby to fałszywa
 
 ## Miro
 Ramka P3-1: `3458764689928563320` (y = 10200).
+
+## Decyzje użytkownika (2026-11-09)
+- Klatki: 1, 2, 3, 03b, 4, 5, 10, 11. Pomijamy 6–9.
+- Sklep H&M zostaje (użytek prywatny). Bez napisów.
+- Produkt: kominiarki dziadka A/B/C.
+- Bez castingu: twarzy nie widać, poza chwilą w klatce 4.
+- Tło: Szymoszkowa.
+
+## Klatki v1 (Nano Banana Pro, 24 kr z poprawkami) – `klatki_v1.jpg`
+| Klatka | Job |
+|---|---|
+| 101 kolejka | `1d260be7-6937-4c74-b01e-1ebe2011b693` |
+| 102 wejście | `9c008182-78dc-4dc4-8be4-761df77d5e64` |
+| 103 regał | `03c8a503-bd39-46e0-b873-e05e2247daec` |
+| 103b paczka | `4b867949-c478-446b-9a0c-3cfa2439d062` |
+| 104 zakłada (wzór A) | `f58da2e8-0a9e-4f63-a453-c97f070fe6a6` |
+| 105 maska założona | `3dc02863-bde8-42aa-8f8e-79911023f7e6` |
+| 110 wyciąg (B turkus, C czarna) | `21f6852a-386a-4096-925e-401383eaaf1d` |
+| 111 gogle | `6e913a7c-132f-48cf-8a24-f6643ab4310a` |
+
+- Media klatek konkurencji:
+
+  | Klatka | Media |
+  |---|---|
+  | 01 | `c010ab86` |
+  | 02 | `05a79a35` |
+  | 03 | `6d5fd86d` |
+  | 03b | `4a11d7e4` |
+  | 04 | `65d43064` |
+  | 05 | `7c237693` |
+  | 10 | `aa0e95e6` |
+  | 11 | `c2488dea` |
+
+- Do zrobienia przed wideo: w 105 tło różni się od 104 i trzeba je wyrównać.
+- Miro: ramka P3-2 `3458764689940976300`.
