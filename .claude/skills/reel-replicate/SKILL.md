@@ -237,6 +237,12 @@ audio (replace any invented speech), then sync the VO to the real action frame. 
   ("one moment earlier, covered by the blanket") and lock its static background to the end frame with a
   horizontal band mask. Teasing bounces on each count ("lift ~20 cm and drop" with explicit seconds) work in
   Seedance 5 s; then place each VO word on the measured bounce/pull frames.
+- **Behaviour = the competitor's:** before prompting a scene, make a 3-4 fps sheet of that part of the original
+  and write down exactly what each person does (hands, steps, camera move, timing) - copy it, adding nothing.
+  The scene-cut extractor misses in-shot beats (e.g. a celebration dance on the same slope): always scan the
+  whole reel densely once and add missed beats as `frame_XXb_*.png`.
+- Product props (skis, jackets) get the market accents the user asks for (PL: white skis with red POLSKA +
+  eagle; small eagle patch on one jacket; a small flag in the background) - subtle, never dominating.
 - Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
   model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
   paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).
