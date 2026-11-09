@@ -243,6 +243,11 @@ audio (replace any invented speech), then sync the VO to the real action frame. 
   whole reel densely once and add missed beats as `frame_XXb_*.png`.
 - Product props (skis, jackets) get the market accents the user asks for (PL: white skis with red POLSKA +
   eagle; small eagle patch on one jacket; a small flag in the background) - subtle, never dominating.
+- **Prompt with surgical precision (user rule):** in every frame prompt spell out hands (both hands? which hand
+  holds what, five fingers), exact camera height/angle copied from the competitor frame, each person's outfit +
+  design, printed details stay flat (printed cigarette is NOT a 3D cigarette), product specifics (mesh eye oval
+  with black rim, printed goggle band on design A, brown stitched hem), real goggles over the fabric, light
+  direction. Missing any of these cost re-rolls before.
 - Feet: check that every seated person is directly above their own pair of shoes in start AND end frame. If the
   model keeps the wrong layout, cut the people out (rembg u2net_human_seg), make a clean plate (people removed),
   paste them shifted over their shoes, then one Nano retouch pass to blend; re-paste details it loses (goggles).

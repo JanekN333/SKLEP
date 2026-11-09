@@ -17,3 +17,12 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
   - B3: dorożka.
 - Koszt planu: 6 klatek (ok. 12 kr) plus 5 klipów 480p (ok. 66 kr).
 - Wydane do tej pory: ok. 14 kr (casting 4 obrazy, Krupówki, 2 dodatkowe ujęcia bohatera).
+
+## Klatki (zaakceptowane do wideo, 2026-11-09)
+- H1 POV wyciąg: `f6bfabff-df9b-4c5f-9d00-bed0b1d1a8ff`
+- H2 start: `89bd67ac-0d03-4016-9f3a-960220ab4d6b`; H2 koniec: `8f25129c-ec63-4917-8c07-e4b36f252ed0`
+- B1 trójka: `bea656cf-a872-4795-88c8-e431cb1ecc0f`
+- B2 zjazd: `65d1eea4-52ec-4c58-bbc3-23fed7430507`
+- B2b taniec: `0f8ceb5f-80a5-41ef-9d2c-b7aa17fef7fc`
+- B3 auto na Krupówkach (decyzja użytkownika zamiast dorożki): `0e79c87d-6790-4317-9dd9-d94fa2bbba3c`
+- Wydano łącznie ok. 34 kr (casting 14 kr + klatki 20 kr).
