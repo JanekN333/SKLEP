@@ -37,8 +37,8 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
 ## Klatki v1 (Nano Banana Pro, 24 kr z poprawkami) – `klatki_v1.jpg`
 | Klatka | Job |
 |---|---|
-| 101 kolejka | `1d260be7-6937-4c74-b01e-1ebe2011b693` |
-| 102 wejście | `9c008182-78dc-4dc4-8be4-761df77d5e64` |
+| 101 kolejka (v2: sweter POLSKA, prawdziwe oczy) | `77da8000-823f-49d1-871d-7e00479864dc` |
+| 102 wejście (v2: światło, oczy) | `c1a51c16-3cbf-4579-a8bb-ea3ad60552a4` |
 | 103 regał | `03c8a503-bd39-46e0-b873-e05e2247daec` |
 | 103b paczka | `4b867949-c478-446b-9a0c-3cfa2439d062` |
 | 104 zakłada (wzór A) | `f58da2e8-0a9e-4f63-a453-c97f070fe6a6` |
@@ -61,3 +61,4 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
 
 - Do zrobienia przed wideo: w 105 tło różni się od 104 i trzeba je wyrównać.
 - Miro: ramka P3-2 `3458764689940976300`.
+- Klatki v2: poprawione 101 i 102 (realizm, światło, oczy, stroje). Klatki kosztowały łącznie 32 kr.
