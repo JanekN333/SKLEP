@@ -77,3 +77,5 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
 - Podgląd v4 to pełna rolka: 13,3 s, −13,9 LUFS, whisper bez mowy.
 - Kolejność ujęć: H1 2,5 / H2-1 0,5 / H2-2a 1,4 / H2-2b 1,8 / B1 1,3 / zjazd 2,0 / taniec 2,1 / auto 1,5.
 - Dalej: upscale 1080p (8 klipów) i finalna rolka.
+- Podgląd v5: taniec skrócony o 0,5 s, teraz 1,6 s (fragment 0,9–2,5 s klipu B2b).
+  - Rolka ma 12,8 s, −13,9 LUFS, whisper bez mowy.
