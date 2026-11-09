@@ -72,3 +72,8 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
   - Whisper: brak mowy.
 - Miro: uporządkowane. Aktualna wersja jest w P2-5 (pasek `3458764689876880846`), stare obrazy usunięte.
 - Wydane na projekt 2: ok. 189 kr.
+- Dodany taniec z kijkami: Seedance B2b (`vid1/B2b.mp4`), fragment 0,9–3,0 s.
+  - Na początku klipu (0–0,84 s) było słowo „Okay”, więc ten fragment jest pominięty.
+- Podgląd v4 to pełna rolka: 13,3 s, −13,9 LUFS, whisper bez mowy.
+- Kolejność ujęć: H1 2,5 / H2-1 0,5 / H2-2a 1,4 / H2-2b 1,8 / B1 1,3 / zjazd 2,0 / taniec 2,1 / auto 1,5.
+- Dalej: upscale 1080p (8 klipów) i finalna rolka.
