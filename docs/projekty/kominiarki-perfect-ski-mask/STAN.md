@@ -79,3 +79,11 @@ Stan na 2026-11-09. **W toku.** Casting zrobiony, plan ujęć jest na Miro (ramk
 - Dalej: upscale 1080p (8 klipów) i finalna rolka.
 - Podgląd v5: taniec skrócony o 0,5 s, teraz 1,6 s (fragment 0,9–2,5 s klipu B2b).
   - Rolka ma 12,8 s, −13,9 LUFS, whisper bez mowy.
+- Podgląd v6: usunięty przeskok między H2-2a a H2-2b. H2-2 to teraz jedno ciągłe ujęcie 3,8 s (`cut/v6_H22.mp4`):
+  - H2-2a 0,35–1,35 s w normalnym tempie;
+  - H2-2a 1,35–3,04 s przyspieszone 2x;
+  - H2-2b 0,04–1,0 s przyspieszone 2x;
+  - H2-2b 1,0–2,4 s w normalnym tempie.
+  - Klipy połączone we wspólnej klatce (różnica 1,8/255).
+- Rolka v6 ma 13,3 s, −13,9 LUFS, whisper bez mowy.
+  - Cięcia: 2,5 / 3,0 (jak u konkurencji) / 6,8 / 8,2 / 10,2 / 11,8 s.
