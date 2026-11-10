@@ -97,6 +97,11 @@ Before writing ANY video prompt:
    and write a motion script in STAN.md: who moves, which body part, direction, how big/fast, camera
    (handheld/static/POV/whip-pan, who holds the phone), with timestamps ("0.3 s right hand lifts cloth 10 cm,
    0.6 s drops it; 2.9 s yank to the right…"). Copy energy too: if they jump/fall/flail, ours must as well.
+   Also write the **shot sheet** per shot (user: "ruch, ujęcia, sposób ujęć, ustawienie, światło, cienie – wszystko"):
+   shot size (close-up / waist / full body), camera height and angle (low from below, eye level, high), lens
+   (selfie wide-angle, normal), distance, where each person stands in frame, light direction + hardness + time
+   of day (low sun from left, hard shadows, overcast soft), shadow direction, colour/white balance, sky. Use it
+   for the START FRAMES too (Nano Banana prompt + competitor frame as reference), not only for the video.
 2. Put that script into the prompt with the timings, plus the competitor frame as an `image_references`
    when the layout matters (camera height, who stands where).
 3. QA: put our 8 fps sheet next to the competitor's for the same shot; if the move is weaker, different or

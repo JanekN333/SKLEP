@@ -28,5 +28,16 @@ Reguła użytkownika: z każdej rolki 20 ujęć (`extract_frames.py --count 20`,
 - **Poza 11,1–12,8 (17–18):** statyczny kadr z dołu ze słońcem w rogu. Stoi w rozkroku z kijkami, napina ręce w górę i lekko się kołysze.
 - **Auto 12,8–14,5 (19–20):** selfie z wyciągniętej ręki, wychylony z okna jadącego auta. Głowa w masce się buja, w tle przesuwa się droga i góry.
 
+
+## Karta ujęć (kadr, kamera, światło, cienie, kolor)
+| Ujęcie | Kadr i kamera | Światło i cienie | Kolor |
+|---|---|---|---|
+| Sklep 1–8 | całe ciało, zbliża się do pasa; kamera na wysokości klatki piersiowej, z ręki, idzie tyłem; zwykły obiektyw | ciepłe lampy sufitowe (spoty), miękkie cienie pod nim, drewniane ściany | ciepły, pomarańczowo-drewniany, lekko przygaszony |
+| Zakładanie 9–12 | od pasa w górę, centralnie, kamera nieruchoma na wysokości twarzy | jasny dzień, rozproszone światło od śniegu, brak twardych cieni na twarzy | chłodny, niebieskie niebo, biały śnieg |
+| Trójka 13–14 | zbliżenie z bardzo niska (żabia perspektywa), szeroki kąt selfie, 3 głowy w górnej połowie, czyste niebo | ostre słońce z boku, mocne światło na maskach | nasycony błękit nieba |
+| Zjazd 15–16 | selfie z ręki przed sobą, od pasa w górę, szeroki kąt, kask i gogle | pochmurno, płaskie miękkie światło, las w tle | chłodny, szaro-biały |
+| Poza 17–18 | cała sylwetka z niska, kamera prawie przy ziemi, słońce w prawym górnym rogu (flara) | kontrowe słońce, cień pada do kamery, sztruks ratraku | mocny błękit, biel |
+| Auto 19–20 | selfie z wyciągniętej ręki z okna auta, szeroki kąt, lusterko i drzwi w kadrze | pochmurno, miękkie światło | chłodny, zimowy |
+
 ## Miro
 Ramka P4 `3458764690017623312` (y = 18600), arkusz 20 ujęć `3458764690023137131`.
