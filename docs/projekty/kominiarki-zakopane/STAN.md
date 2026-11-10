@@ -168,3 +168,14 @@ Topaz 1080p (5 × 3 kr = 15 kr): hook `eb4d4832`, zakładanie `0b44a241`, śnie�
 - Naprawa odtwarzania: loudnorm dawał audio 96 kHz (i H.264 level 5.0) – pliki się nie otwierały. Finał przekodowany: H.264 High 4.1, AAC 48 kHz. Zawsze dodawać `-ar 48000` po loudnorm.
 - Hook: korekta koloru (mniej pomarańczowej skóry i poświaty, ziarno). Główny problem jakości twarzy: kadr przycięty do 80% + Seedance 480p → twarze ~400 px, Topaz je wygładza na wosk. Prawdziwa poprawka: hook od nowa w Seedance 720p.
 - Hook v3 (jakość twarzy): nowe klatki z naturalną skórą bez HDR (start `43ff8cae`, koniec `c0445079`), Seedance 2.5 **720p** 6 s `92c0e8ce-1e7d-4eb0-b236-64de2c4b281f` (42 kr), Topaz `39566240` (3 kr). Okrzyk pod usta z klipu: słowa 0,88 / 1,869 / 2,925 s (`mix_chant.py … 0.652 1.648 2.70`), uniesienia 0,7–1,0 i 1,5–1,9, zerwanie 3,2 s; w rolce 0,40–5,30. Finał nadpisany: `v2_rolka_final_1080p.mp4` (13,5 s, H.264 4.1, AAC 48 kHz).
+
+## WERSJA v11 projektu 1 (10.11) – `rolka_v11_1080p.mp4` (17,9 s, −14 LUFS, 1080p)
+Poprawki wg użytkownika: hook realistyczny + czarne gogle + nowy okrzyk (wspólny 3M+2K), kobieta – realistyczna maska C i czarne gogle, wyciąg wrócił – gogle na oczach, światło, machają do kamery.
+| Ujęcie | Klatki | Seedance 2.5 480p | Topaz | W rolce |
+|---|---|---|---|---|
+| Hook 6 s | start `c00e2526`, koniec `b1762ad9`, audio `18fc82e5` | `6175c14f-5139-4828-9ce7-478e7ac27535` | `d9306e8a` | 0,6–5,9; słowa 1,21 / 2,84 / 4,22 s (pod usta), zerwanie ~4,1 s |
+| Gogle (stary B-roll 1) | – | `553de6f5` | `52eccd6d` | 0–3,5 |
+| Kobieta 4 s | `228dd342` | `52cd0cd9-7e0d-46af-a2e7-26e1cc4dbfea` | `f4eca917` | 0,5–3,3, dźwięk z wyciągu |
+| Wyciąg 4 s | `266ccedb` (kadr `ced293cb`) | `aebe2ff2-0030-40c5-a70b-8f04a1ae4f82` | `47b4bb2d` | 0,8–3,6 |
+| Selfie (stare) | – | `b29841ab` | `140733a8` | 0,5–4,0 |
+Koszt: klatki 8 kr, klipy 42 kr, Topaz 15 kr.
