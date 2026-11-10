@@ -75,3 +75,14 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
 
 - Poprawka K3 do decyzji: nowa klatka 103b z tego samego regału i nowy K3, razem 8 kr.
 - Miro: ramka P3-3 `3458764689942877574`.
+
+## Poprawki v2 (2026-11-10, 20 kr) – podgląd v2 (`podglad_480p.mp4`, 12,5 s, −14,1 LUFS)
+- **K3:** nowa 103b z tego samego regału (`7aaca447-914e-487a-b582-f61bf68ed573`) i nowy klip `0ead288c-f526-4cfb-a6d3-f71469b8a717`. W rolce 0,8–3,0 s, jedno ciągłe ujęcie.
+- **K4 = K4a + K4b**, połączone w najbardziej podobnej klatce:
+  - K4a `7c5af37c`, fragment 1,55–3,75 s;
+  - K4b `dc4e4d85-c503-44ca-8c7e-0ef53c43bb17`, fragment 0,08–3,18 s, klatki 105 → 106c.
+  - Klatka 106: pierwsza wersja `10a652ad` miała podwójne gogle; poprawka `26d11097`; tło wklejone z 105 jako media `d7767385-d23a-4700-9db4-7bd99286a045`.
+- **Kolejność:** kolejka 1,5 / wejście 1,0 / regał 2,2 / przemiana 5,3 / wyciąg 2,4 s.
+- **Whisper:** na całej rolce w 1,07–3,07 s wykrywa „mowę” w szumie sklepu. Treść zmienia się zależnie od języka, a no_speech wynosi 0,71, więc to halucynacja. Pojedyncze klipy są czyste.
+- **Projekt 3 łącznie:** ok. 90 kr.
+- **Dalej:** upscale 1080p.
