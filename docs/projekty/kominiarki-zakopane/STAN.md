@@ -166,3 +166,4 @@ Koszt: 5 klipów Seedance ≈ 63 kr + klatki śnieżek 8 kr. Topaz dopiero po ak
 ### FINAŁ v2 – `v2_rolka_final_1080p.mp4` (1080×1920, 13,3 s, −14 LUFS)
 Topaz 1080p (5 × 3 kr = 15 kr): hook `eb4d4832`, zakładanie `0b44a241`, śnieżki `e47d00dd`, taniec `d0961f45`, selfie `7a42efc7`. Cięcia i dźwięk jak w podglądzie v3.
 - Naprawa odtwarzania: loudnorm dawał audio 96 kHz (i H.264 level 5.0) – pliki się nie otwierały. Finał przekodowany: H.264 High 4.1, AAC 48 kHz. Zawsze dodawać `-ar 48000` po loudnorm.
+- Hook: korekta koloru (mniej pomarańczowej skóry i poświaty, ziarno). Główny problem jakości twarzy: kadr przycięty do 80% + Seedance 480p → twarze ~400 px, Topaz je wygładza na wosk. Prawdziwa poprawka: hook od nowa w Seedance 720p.
