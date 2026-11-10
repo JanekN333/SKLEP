@@ -162,3 +162,6 @@ Koszt: 5 klipów Seedance ≈ 63 kr + klatki śnieżek 8 kr. Topaz dopiero po ak
 - Zakładanie 4 s `e20897bf-3c76-491a-a918-6cf33af3c350`: granatowa kurtka z flagą (klatki `4d36244f` → `17d68e48`, ref oczu `fd8b5438`), jeden owalny otwór bez mostka.
 - Koszt poprawek: 8 kr klatki + 30 kr klipy.
 - v3 (`v2_seedance_480p_podglad_v3.mp4`): usunięty pogłos i oryginalny okrzyk z klipu (to było „echo przed głosem”). Usta w klipie idą pod okrzyk wygenerowany przez Seedance (słowa 0,50 / 1,39 / 2,39 s), a nie pod referencję; okrzyk ustawiony na te momenty (`mix_chant.py … 0.265 1.155 2.155`, różnica ≤ 15 ms). Klip audio od 2,95 s (reakcja ekipy).
+
+### FINAŁ v2 – `v2_rolka_final_1080p.mp4` (1080×1920, 13,3 s, −14 LUFS)
+Topaz 1080p (5 × 3 kr = 15 kr): hook `eb4d4832`, zakładanie `0b44a241`, śnieżki `e47d00dd`, taniec `d0961f45`, selfie `7a42efc7`. Cięcia i dźwięk jak w podglądzie v3.
