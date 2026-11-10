@@ -69,3 +69,45 @@ Tablica „AI Video Dropshipping”: https://miro.com/app/board/uXjVESbL4Xw=/
 2. Topaz upscale do 1080p (`upscale_video`, provider topaz, 9:16): 4 klipy po ok. 3 kr, razem ok. 12 kr. Najpierw zapytać o zgodę.
 3. Finalna rolka 1080×1920 z tymi samymi cięciami i dźwiękiem. Wysłać i zaktualizować Miro.
 4. Do rozważenia: napis „POLSKA” na szaliku w klatce końcowej jest lekko poprzekręcany.
+
+## WERSJA 2: projekt 1 od nowa, 1:1 z konkurencją (2026-11-10)
+Prośba użytkownika: odtworzyć rolkę konkurencji 1:1, ale z naszym produktem, awatarami z projektu 1, Szymoszkową i polskimi akcentami. Koc z napisem POLSKA i orłem. Zakładanie maski jak w projekcie 2. Śnieżki z trafieniem. Taniec z wypchnięciem. Selfie grupowe.
+
+### Konkurencja (12,8 s)
+- Cięcia: 4,28 / 7,2 / 9,4 / 11,36 s.
+- Głos hooka: „Three” 0,0 / „two” 0,56 / „one” 1,64 / „let's go” 2,64 s.
+- Koc: uniesienia 0,7–1,1 i 1,8–2,1 s, zerwanie 2,9–3,1 s, odsłonięcie do 4,28 s.
+
+### Klatki v2 (Nano Banana Pro, 36 kr) – `v2_klatki.jpg`
+| Klatka | Opis | Job |
+|---|---|---|
+| 101 | hook start, koc POLSKA na głowach | `7c0049b6-fade-4dd8-8bb5-4852837cfec6` |
+| 103 | odsłonięcie: 4 głowy A/B/C/A w goglach, 5 znajomych, sweter z orłem | `6318be94-c02a-4a8a-bf6d-be9cf2e82025` |
+| 201 | maska przy piersi, gogle na czole (pomarańczowa kurtka, wzór A) | `9dc41035-137c-41c5-862e-e7cfc1c71c9a` |
+| 202 | maska na czubku głowy | `d7c6c08d-4ac5-411a-baf5-475352ff9d96` |
+| 203 | oczy widoczne, gogle na czole | `ae90a8df-7fdd-4e71-9db4-98562afe650b` |
+| 204 | gogle na oczach | `f839b47e-5eb1-4fdb-a9a8-b7643ed5fbdc` |
+| 306 | śnieżki: biała z flagą, granatowa, czerwona, zielona | `4f21ac34-301f-46df-9f2a-ec3ae950097f` |
+| 307 | trafienie śnieżką | `70451e8e-e8e4-408d-a338-15d1f5425199` |
+| 408 | taniec, bordowa kurtka, wzór C | `e928369a-2d15-4a79-ac22-96ce7bb5bb4e` |
+| 4085 | wypchnięcie przez białą kurtkę z orłem, wzór B | `6255372a-4bad-4d53-a0a0-b63b67f91df9` |
+| 409 | taniec 2 | `f9c12fe2-767d-42e7-a568-4eda03e3d132` |
+| 510 | selfie, czerwona kurtka POLSKA, wzór A | `27e639af-2b85-4729-a3d8-5e6b26404a59` |
+| 511 | grupa wskakuje do selfie | `db3a8c65-7b9a-4118-88fb-99cebbbf6e3a` |
+
+### Kadry konkurencji (media)
+| Kadr | Media |
+|---|---|
+| 05 | `4cb933dc` |
+| 07 | `2b10aabe` |
+| 09 | `98ef6910` |
+| bump | `40f1e461` |
+| 10 | `c21daa38` |
+| 11 | `f036024b` |
+
+### Przed wideo
+- Przypiąć tło 101 do 103 (różnica 6,4).
+- Wyrównać tła 201–204.
+
+### Miro
+Ramka P1v2 `3458764689945840110` (y = 16600).
