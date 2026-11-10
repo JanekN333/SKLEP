@@ -76,3 +76,6 @@ Dodatkowe klatki zakładania (jak w projektach 1 i 2): 10 `bb5943c0` (maska na c
 | Poza 4 s (17) | `85d1bffe-4a08-4279-be55-55304e74d6c6` | 0,3–2,0, dźwięk z auta |
 | Auto 4 s (19) | `6cc71068-b05f-4b94-a4fe-9f55d27486bd` | 0,2–1,9 |
 Koszt: klatki 4+4 kr, klipy 75 kr. Halucynacje whispera („Thank you for watching”) na szumie – dźwięk podmieniony na czysty szum.
+
+## FINAŁ 1080p – `rolka_final_1080p.mp4` (14,5 s, −14 LUFS, H.264 4.1, AAC 48 kHz)
+Topaz (6 × 3 kr): sklep `193fbec7`, zakładanie `5d83f4bb`, trójka `fd3fceaa`, zjazd `b022d4fb`, poza `25870112`, auto `ed52ef3d`.
