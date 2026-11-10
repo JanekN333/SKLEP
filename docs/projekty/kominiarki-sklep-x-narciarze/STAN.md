@@ -86,3 +86,33 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
 - **Whisper:** na całej rolce w 1,07–3,07 s wykrywa „mowę” w szumie sklepu. Treść zmienia się zależnie od języka, a no_speech wynosi 0,71, więc to halucynacja. Pojedyncze klipy są czyste.
 - **Projekt 3 łącznie:** ok. 90 kr.
 - **Dalej:** upscale 1080p.
+
+## Przemiana v3, jak w projekcie 2 (2026-11-10, klatki 12 kr + klipy 18 kr)
+- Uwaga użytkownika: przemiana ma być DOKŁADNIE jak w projekcie 2 (finalna rolka). Gogle na czole, nie na szyi.
+- Klatki (tło P2–P4 przypięte do P1):
+
+  | Klatka | Co widać | Job / media |
+  |---|---|---|
+  | P1 | maska przy piersi | job `cf2c14ca-ac0d-454f-8cdc-da177f1eda31` |
+  | P2c | maska na czubku głowy pod goglami | media `0b39f09e-fd7f-41fe-a40f-d0ef9c922aa0` |
+  | P3c | oczy widoczne, gogle na czole | media `ae5ae53f-62d7-48a0-a998-0c573f84a10f` |
+  | P4c | gogle na oczach | media `4c7d34a5-789e-400d-89fd-9139f0f0d46c` |
+
+- Klipy Kling 3.0 std:
+
+  | Klip | Job | Fragment w rolce |
+  |---|---|---|
+  | H2-1 | `c0d325af-82c6-4ce6-a8a2-0090337440d9` | 2,2–2,7 s |
+  | H2-2a (P2 → P3) | `0071fe07-c1b5-4ef2-820a-0b07730f2de7` | 0,5–1,9 s |
+  | H2-2b (P3 → P4) | `b204ae84-f422-405a-8095-c346130605e4` | 0,9–2,7 s |
+
+- Podgląd v3 (`podglad_480p.mp4`, 10,9 s, ok. −14 LUFS). Kolejność:
+  - kolejka 1,5 s
+  - wejście 1,0 s
+  - regał 2,2 s
+  - H2-1 0,5 s
+  - cięcie
+  - H2-2a 1,4 s
+  - H2-2b 1,8 s
+  - wyciąg 2,4 s
+- Projekt 3 łącznie: ok. 120 kr.
