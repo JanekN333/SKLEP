@@ -91,6 +91,16 @@ Upload images via `image_get_upload_url`/`image_create` (or URL). Give the user 
 Offer to rewrite their b-roll descriptions into stronger motion prompts.
 
 ## Stage 4 — Animate
+**Motion 1:1 with the competitor (user's top complaint: "a totally different or much weaker move was made").**
+Before writing ANY video prompt:
+1. For every shot, watch the competitor at 8 fps (`ffmpeg -ss <a> -t <len> -i reel.mp4 -vf "fps=8,scale=200:-1,tile=8xN"`)
+   and write a motion script in STAN.md: who moves, which body part, direction, how big/fast, camera
+   (handheld/static/POV/whip-pan, who holds the phone), with timestamps ("0.3 s right hand lifts cloth 10 cm,
+   0.6 s drops it; 2.9 s yank to the right…"). Copy energy too: if they jump/fall/flail, ours must as well.
+2. Put that script into the prompt with the timings, plus the competitor frame as an `image_references`
+   when the layout matters (camera height, who stands where).
+3. QA: put our 8 fps sheet next to the competitor's for the same shot; if the move is weaker, different or
+   in the wrong place, fix the prompt and re-roll before showing the user.
 Trigger: user says they've selected frames / "generate all the videos" (often with a screenshot of the board
 and the original reel re-uploaded). Read the board (`canvas_read_as_svg` / `board_preview_read`) to get what
 survived, the hook prompt and every b-roll note. Re-watch the original reel (frames.json durations) to match
