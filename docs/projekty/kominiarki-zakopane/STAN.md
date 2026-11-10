@@ -81,19 +81,19 @@ Prośba użytkownika: odtworzyć rolkę konkurencji 1:1, ale z naszym produktem,
 ### Klatki v2 (Nano Banana Pro, 36 kr + poprawki 10.11: 103, 307, 4085, 510, 511 i dalej 103, 101 ×3, 307 ×2, 4085, 409 ×2 – razem ok. 30 kr) – `v2_klatki.jpg`
 | Klatka | Opis | Job |
 |---|---|---|
-| 101 | hook start, koc POLSKA na 3 głowach (3 zarysy), tło przypięte do 103 (plik lokalny `L_101.png`, przed wideo wgrać jako media) | `1dd7bd07-df8c-4554-97a8-e81f20fe7324` |
-| 103 | odsłonięcie: dokładnie 3 głowy A/B/C w goglach, 5 znajomych, sweter z orłem | `3f573154-3ee8-4dea-9cf1-8b150a484183` |
+| 101 | koc POLSKA na 3 głowach, tło przypięte do 103 v3 (lokalnie `p5/L2_101.png`, przed wideo wgrać jako media) | `1dd7bd07-df8c-4554-97a8-e81f20fe7324` |
+| 103 | 3 głowy na białych manekinach, A/B/C 1:1 z produktem | `8737b92e-05c3-47ea-92b1-16a3977fc12b` |
 | 201 | maska przy piersi, gogle na czole (pomarańczowa kurtka, wzór A) | `9dc41035-137c-41c5-862e-e7cfc1c71c9a` |
 | 202 | maska na czubku głowy | `d7c6c08d-4ac5-411a-baf5-475352ff9d96` |
 | 203 | oczy widoczne, gogle na czole | `ae90a8df-7fdd-4e71-9db4-98562afe650b` |
 | 204 | gogle na oczach | `f839b47e-5eb1-4fdb-a9a8-b7643ed5fbdc` |
 | 306 | śnieżki: biała z flagą, granatowa, czerwona, zielona | `4f21ac34-301f-46df-9f2a-ec3ae950097f` |
 | 307 | trafienie śnieżką wielkości pięści, z kadru 306 (ta sama ściana) | `7259f143-8b4c-4eb8-aecd-ebb406fe269b` |
-| 408 | taniec, bordowa kurtka, wzór C | `e928369a-2d15-4a79-ac22-96ce7bb5bb4e` |
-| 4085 | wypchnięcie przez białą kurtkę z orłem, wzór B + czarne gogle, to samo miejsce co 408 | `60d016dc-50ba-4b77-9caa-5b093e678cbd` |
-| 409 | biała kurtka tańczy sama, czarne gogle, tło z 4085 | `17769d9a-e637-4e9d-ab62-1e09d11233c2` |
-| 510 | selfie, granatowa kurtka z flagą, wzór A, matowe czarne gogle | `5e11326b-ce28-48f1-83d0-e6ea0e4084ee` |
-| 511 | grupa wskakuje do selfie, matowe czarne gogle u wszystkich | `8bdd9b63-7d52-44f8-bb6f-2960704d7ff8` |
+| 408 | bordowa kurtka, maska C 1:1 (zaczesane włosy, wąs, szlug) | `2eebabff-9e8c-442c-b893-a2d6e33dfc6c` |
+| 4085 | biała kurtka z orłem wypycha bordową, maska B 1:1 (skrzywiony, szlug, bez wąsa) + czarne gogle | `a8d54402-8fd7-4831-b539-d98eeed90464` |
+| 409 | biała kurtka tańczy sama, maska B | `d5028a84-c567-44ed-b726-a21b64a4e8b4` |
+| 510 | selfie, granatowa kurtka z flagą, maska A, szyja w kołnierzu | `efb28167-560a-4b1a-ab57-83b5690ae0bc` |
+| 511 | selfie: dokładnie 3 osoby A (granat), B (czerwona), C (zielona); złożone lokalnie (`p5/f511.png`: baza `043be499`, twarz A z 510, głowa B z `bafe6c5b`), przed wideo wgrać jako media | lokalnie |
 
 ### Kadry konkurencji (media)
 | Kadr | Media |
@@ -111,3 +111,10 @@ Prośba użytkownika: odtworzyć rolkę konkurencji 1:1, ale z naszym produktem,
 
 ### Miro
 Ramka P1v2 `3458764689945840110` (y = 16600), arkusz klatek `3458764689946836564`.
+
+### Poprawki v3 (10.11, po uwagach użytkownika: produkt nie 1:1, „wklejone w paincie”)
+- Zasada: każda maska dostaje zdjęcie swojego produktu (A `8fbcf69d`, B `f48de878`, C `a80871bf`) i wzór realizmu z projektu 2 (`bea656cf` trójka, `8f25129c` H2). W prompcie: nadruk jest nieruchomy, cienki elastyczny poliester z lekkim połyskiem, szyja schowana w kołnierz, światło i cienie ze słońca sceny, bez HDR.
+- Gdy edycja psuje inną maskę (model zamienia A na B), składam lokalnie z elipsą i miękką krawędzią.
+- Koszt v3: ok. 34 kr.
+- Porównanie z produktem: `v2_maski_zblizenia.jpg` (Miro `3458764689947710122`), arkusz klatek `3458764689947710111`.
+- Do sprawdzenia przed wideo: maski w 306/307 (A/B/C/A) przy zbliżeniu.
