@@ -78,22 +78,22 @@ Prośba użytkownika: odtworzyć rolkę konkurencji 1:1, ale z naszym produktem,
 - Głos hooka: „Three” 0,0 / „two” 0,56 / „one” 1,64 / „let's go” 2,64 s.
 - Koc: uniesienia 0,7–1,1 i 1,8–2,1 s, zerwanie 2,9–3,1 s, odsłonięcie do 4,28 s.
 
-### Klatki v2 (Nano Banana Pro, 36 kr) – `v2_klatki.jpg`
+### Klatki v2 (Nano Banana Pro, 36 kr + poprawki 10.11: 103, 307, 4085, 510, 511 i dalej 103, 101 ×3, 307 ×2, 4085, 409 ×2 – razem ok. 30 kr) – `v2_klatki.jpg`
 | Klatka | Opis | Job |
 |---|---|---|
-| 101 | hook start, koc POLSKA na głowach | `7c0049b6-fade-4dd8-8bb5-4852837cfec6` |
-| 103 | odsłonięcie: 4 głowy A/B/C/A w goglach, 5 znajomych, sweter z orłem | `6318be94-c02a-4a8a-bf6d-be9cf2e82025` |
+| 101 | hook start, koc POLSKA na 3 głowach (3 zarysy), tło przypięte do 103 (plik lokalny `L_101.png`, przed wideo wgrać jako media) | `1dd7bd07-df8c-4554-97a8-e81f20fe7324` |
+| 103 | odsłonięcie: dokładnie 3 głowy A/B/C w goglach, 5 znajomych, sweter z orłem | `3f573154-3ee8-4dea-9cf1-8b150a484183` |
 | 201 | maska przy piersi, gogle na czole (pomarańczowa kurtka, wzór A) | `9dc41035-137c-41c5-862e-e7cfc1c71c9a` |
 | 202 | maska na czubku głowy | `d7c6c08d-4ac5-411a-baf5-475352ff9d96` |
 | 203 | oczy widoczne, gogle na czole | `ae90a8df-7fdd-4e71-9db4-98562afe650b` |
 | 204 | gogle na oczach | `f839b47e-5eb1-4fdb-a9a8-b7643ed5fbdc` |
 | 306 | śnieżki: biała z flagą, granatowa, czerwona, zielona | `4f21ac34-301f-46df-9f2a-ec3ae950097f` |
-| 307 | trafienie śnieżką | `70451e8e-e8e4-408d-a338-15d1f5425199` |
+| 307 | trafienie śnieżką wielkości pięści, z kadru 306 (ta sama ściana) | `7259f143-8b4c-4eb8-aecd-ebb406fe269b` |
 | 408 | taniec, bordowa kurtka, wzór C | `e928369a-2d15-4a79-ac22-96ce7bb5bb4e` |
-| 4085 | wypchnięcie przez białą kurtkę z orłem, wzór B | `6255372a-4bad-4d53-a0a0-b63b67f91df9` |
-| 409 | taniec 2 | `f9c12fe2-767d-42e7-a568-4eda03e3d132` |
-| 510 | selfie, czerwona kurtka POLSKA, wzór A | `27e639af-2b85-4729-a3d8-5e6b26404a59` |
-| 511 | grupa wskakuje do selfie | `db3a8c65-7b9a-4118-88fb-99cebbbf6e3a` |
+| 4085 | wypchnięcie przez białą kurtkę z orłem, wzór B + czarne gogle, to samo miejsce co 408 | `60d016dc-50ba-4b77-9caa-5b093e678cbd` |
+| 409 | biała kurtka tańczy sama, czarne gogle, tło z 4085 | `17769d9a-e637-4e9d-ab62-1e09d11233c2` |
+| 510 | selfie, granatowa kurtka z flagą, wzór A, matowe czarne gogle | `5e11326b-ce28-48f1-83d0-e6ea0e4084ee` |
+| 511 | grupa wskakuje do selfie, matowe czarne gogle u wszystkich | `8bdd9b63-7d52-44f8-bb6f-2960704d7ff8` |
 
 ### Kadry konkurencji (media)
 | Kadr | Media |
@@ -106,8 +106,8 @@ Prośba użytkownika: odtworzyć rolkę konkurencji 1:1, ale z naszym produktem,
 | 11 | `f036024b` |
 
 ### Przed wideo
-- Przypiąć tło 101 do 103 (różnica 6,4).
+- ~~Przypiąć tło 101 do 103~~ zrobione (maska różnic, tylko koc i ręce z 101).
 - Wyrównać tła 201–204.
 
 ### Miro
-Ramka P1v2 `3458764689945840110` (y = 16600).
+Ramka P1v2 `3458764689945840110` (y = 16600), arkusz klatek `3458764689946836564`.
