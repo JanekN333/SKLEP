@@ -97,6 +97,8 @@ def main():
     ap.add_argument("--max-gap", type=float, default=2.5, help="add a frame if a beat is longer than this")
     ap.add_argument("--dedupe", type=int, default=12, help="max 16x16 hash distance treated as duplicate (0 = off)")
     ap.add_argument("--cols", type=int, default=4)
+    ap.add_argument("--count", type=int, default=20,
+                    help="exact number of frames to output (default 20, user rule); 0 = natural count")
     a = ap.parse_args()
 
     video = os.path.abspath(a.video)
@@ -141,6 +143,24 @@ def main():
         lp = os.path.join(out, "_last.png")
         grab(video, last_t, lp)
         tmp.append((last_t, lp))
+
+    # 4) fixed frame count (user rule: 20 beats per reel): split the longest beat until we reach --count,
+    #    or drop the frame most similar to its predecessor (never first/last) while above it
+    if a.count:
+        k = 0
+        while len(tmp) < a.count:
+            bounds = [t for t, _ in tmp] + [duration]
+            i = max(range(len(tmp)), key=lambda j: bounds[j + 1] - tmp[j][0])
+            mid = (tmp[i][0] + bounds[i + 1]) / 2
+            fp = os.path.join(out, f"_split_{k:03d}.png")
+            k += 1
+            grab(video, mid, fp)
+            tmp.insert(i + 1, (mid, fp))
+        while len(tmp) > a.count:
+            hs = [ahash(p) for _, p in tmp]
+            i = min(range(1, len(tmp) - 1), key=lambda j: hamming(hs[j], hs[j - 1]))
+            os.remove(tmp[i][1])
+            del tmp[i]
 
     frames = []
     for i, (t, p) in enumerate(tmp, 1):

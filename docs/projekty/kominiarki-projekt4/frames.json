@@ -4,67 +4,144 @@
   "width": 720,
   "height": 1280,
   "fps": 30.0,
-  "frame_count": 9,
+  "frame_count": 20,
   "frames": [
     {
       "index": 1,
       "file": "frame_01.png",
       "time": 0.0,
-      "end": 2.28,
-      "duration": 2.28
+      "end": 0.57,
+      "duration": 0.57
     },
     {
       "index": 2,
       "file": "frame_02.png",
-      "time": 2.28,
-      "end": 4.55,
-      "duration": 2.28
+      "time": 0.57,
+      "end": 1.14,
+      "duration": 0.57
     },
     {
       "index": 3,
       "file": "frame_03.png",
-      "time": 4.55,
-      "end": 6.39,
-      "duration": 1.83
+      "time": 1.14,
+      "end": 1.71,
+      "duration": 0.57
     },
     {
       "index": 4,
       "file": "frame_04.png",
-      "time": 6.39,
-      "end": 7.79,
-      "duration": 1.4
+      "time": 1.71,
+      "end": 2.28,
+      "duration": 0.57
     },
     {
       "index": 5,
       "file": "frame_05.png",
-      "time": 7.79,
-      "end": 8.95,
-      "duration": 1.17
+      "time": 2.28,
+      "end": 2.85,
+      "duration": 0.57
     },
     {
       "index": 6,
       "file": "frame_06.png",
-      "time": 8.95,
-      "end": 11.05,
-      "duration": 2.1
+      "time": 2.85,
+      "end": 3.41,
+      "duration": 0.56
     },
     {
       "index": 7,
       "file": "frame_07.png",
-      "time": 11.05,
-      "end": 12.85,
-      "duration": 1.8
+      "time": 3.41,
+      "end": 3.95,
+      "duration": 0.54
     },
     {
       "index": 8,
       "file": "frame_08.png",
-      "time": 12.85,
-      "end": 14.44,
-      "duration": 1.58
+      "time": 3.95,
+      "end": 4.55,
+      "duration": 0.6
     },
     {
       "index": 9,
       "file": "frame_09.png",
+      "time": 4.55,
+      "end": 5.47,
+      "duration": 0.92
+    },
+    {
+      "index": 10,
+      "file": "frame_10.png",
+      "time": 5.47,
+      "end": 6.39,
+      "duration": 0.92
+    },
+    {
+      "index": 11,
+      "file": "frame_11.png",
+      "time": 6.39,
+      "end": 7.09,
+      "duration": 0.7
+    },
+    {
+      "index": 12,
+      "file": "frame_12.png",
+      "time": 7.09,
+      "end": 7.79,
+      "duration": 0.7
+    },
+    {
+      "index": 13,
+      "file": "frame_13.png",
+      "time": 7.79,
+      "end": 8.37,
+      "duration": 0.58
+    },
+    {
+      "index": 14,
+      "file": "frame_14.png",
+      "time": 8.37,
+      "end": 8.95,
+      "duration": 0.58
+    },
+    {
+      "index": 15,
+      "file": "frame_15.png",
+      "time": 8.95,
+      "end": 10.0,
+      "duration": 1.05
+    },
+    {
+      "index": 16,
+      "file": "frame_16.png",
+      "time": 10.0,
+      "end": 11.05,
+      "duration": 1.05
+    },
+    {
+      "index": 17,
+      "file": "frame_17.png",
+      "time": 11.05,
+      "end": 11.95,
+      "duration": 0.9
+    },
+    {
+      "index": 18,
+      "file": "frame_18.png",
+      "time": 11.95,
+      "end": 12.85,
+      "duration": 0.9
+    },
+    {
+      "index": 19,
+      "file": "frame_19.png",
+      "time": 12.85,
+      "end": 14.44,
+      "duration": 1.59
+    },
+    {
+      "index": 20,
+      "file": "frame_20.png",
       "time": 14.44,
       "end": 14.49,
       "duration": 0.05

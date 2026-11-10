@@ -22,6 +22,10 @@ Keep a task list ("Updated tasks…") so the user sees progress: get video → e
 ```bash
 python3 <skill_dir>/scripts/extract_frames.py reel.mp4 --out frames_<name>
 ```
+**User rule: always exactly 20 frames per reel** (`--count 20` is the default). After the scene cuts the script
+splits the longest beats until there are 20 (or drops the most similar neighbour if there are more), so slow
+moves and in-shot reveals get their own frames. Check that the hand-picked key moments (reveal, product shelf)
+are among them; if one is still missing, swap it in for the closest near-duplicate so the total stays 20.
 What the script does: ffmpeg scene detection → one frame just after every cut, min gap 0.45 s → drops
 near-identical neighbours (perceptual hash) → splits any beat longer than 2.5 s so slow pose changes are kept →
 always includes the first and the last frame. Outputs `frame_01.png…`, `frames.json`
