@@ -24,7 +24,7 @@ Reguła użytkownika: z każdej rolki 20 ujęć (`extract_frames.py --count 20`,
 ## Decyzje użytkownika (10.11)
 - Wszystkie 20 ujęć.
 - Ujęcia 1–8 w **sklepie narciarskim** w Zakopanem (nie wypożyczalnia), na półce nasze kominiarki dziadka w opakowaniach.
-- Postacie: nowe awatary od użytkownika (czekam na zdjęcia).
+- Postacie: awatar 1 od użytkownika = główny bohater (brunet, wąsik, czarna kurtka TNF, kask), media `78739fde-f82f-48a3-8768-815dc4b11b00`. Kolejne awatary – czekam.
 - Miejsca: stok Polana Szymoszkowa i Tatry, auto na drodze pod Zakopanem.
 - Polskie akcenty obowiązkowo (flaga, orzeł). Bez napisów, bez muzyki z oryginału.
 
