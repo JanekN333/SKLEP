@@ -118,3 +118,9 @@ Ramka P1v2 `3458764689945840110` (y = 16600), arkusz klatek `3458764689946836564
 - Koszt v3: ok. 34 kr.
 - Porównanie z produktem: `v2_maski_zblizenia.jpg` (Miro `3458764689947710122`), arkusz klatek `3458764689947710111`.
 - Do sprawdzenia przed wideo: maski w 306/307 (A/B/C/A) przy zbliżeniu.
+
+### Okrzyk hooka „Trzy! Dwa! JEDEN!” (10.11)
+- Decyzja użytkownika: wspólny okrzyk, głosy męskie i damskie (ekipa za stołem).
+- ElevenLabs, flow `VSWcmFxhDdvcDpRImRXe`, model eleven_v4, tag [shouting excitedly]: Radek, Bartosz (powiedział „trzy” 2×, biorę 1., 3. i 4. fragment), Patryk, Zofia, Katarzyna. Jarosław i Kinga nie poszły (darmowe generowanie zajęte).
+- Pliki źródłowe: scratchpad `proj1/chant/`. Miks: `tools/mix_chant.py <dir> <out> t_trzy t_dwa t_jeden [długość]` – przesunięcia 0–42 ms, kobiety ciszej, „JEDEN” +25%, potem aecho + kompresja + loudnorm.
+- Podgląd: `okrzyk_3_2_1_podglad.mp4` (czasy robocze 0,15 / 1,15 / 2,35 s). Docelowo czasy słów ustawiam po wygenerowaniu klipu hooka: mierzę ruch koca (różnice klatek) i kładę każde słowo tuż przed uniesieniem, „JEDEN” na zerwanie.
