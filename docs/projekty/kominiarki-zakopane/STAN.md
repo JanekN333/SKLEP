@@ -124,3 +124,19 @@ Ramka P1v2 `3458764689945840110` (y = 16600), arkusz klatek `3458764689946836564
 - ElevenLabs, flow `VSWcmFxhDdvcDpRImRXe`, model eleven_v4, tag [shouting excitedly]: Radek, Bartosz (powiedział „trzy” 2×, biorę 1., 3. i 4. fragment), Patryk, Zofia, Katarzyna. Jarosław i Kinga nie poszły (darmowe generowanie zajęte).
 - Pliki źródłowe: scratchpad `proj1/chant/`. Miks: `tools/mix_chant.py <dir> <out> t_trzy t_dwa t_jeden [długość]` – przesunięcia 0–42 ms, kobiety ciszej, „JEDEN” +25%, potem aecho + kompresja + loudnorm.
 - Podgląd: `okrzyk_3_2_1_podglad.mp4` (czasy robocze 0,15 / 1,15 / 2,35 s). Docelowo czasy słów ustawiam po wygenerowaniu klipu hooka: mierzę ruch koca (różnice klatek) i kładę każde słowo tuż przed uniesieniem, „JEDEN” na zerwanie.
+
+### Wideo v2 (10.11) – podgląd `v2_podglad_720p.mp4` (12,9 s, −14 LUFS)
+Zakładanie od nowa (ta sama osoba i chata co 201): 201 `bd588c3a` (otwór pokazuje kurtkę), 202 `f4399313` (maska na czubku + gogle), 203 `83210c5f`, 204 `130c6503`.
+| Ujęcie | Klip (Kling 3.0 std, dźwięk) | Fragment w rolce |
+|---|---|---|
+| Hook 101→103, 5 s | `604fb1bb-cc37-456c-89e0-eeb23b3d6420` | 0–4,28 s; okrzyk na 0,05 / 0,90 / 2,35 s (ruch koca: 0,2–0,6, 1,05–1,35, zerwanie 2,35–3,45) |
+| Zakładanie A (tylko start 201) | `d05d9921-afeb-4466-8dd6-c9083c2a19c5` | 1,95–2,60 |
+| Zakładanie B 202→203 | `ead5eb7b-6b72-4839-a36f-8c4bdb936bb7` | 0,45–1,75 |
+| Zakładanie C 203→204 | `f4531657-ca74-4698-aa6b-a8e318fcbd4b` | 0,30–1,27, kolor dopasowany do B |
+| Śnieżki 306→307 | `9f9529be-da59-4024-bb02-4a0164674aab` | 0,8–3,0 |
+| Taniec 408→4085 | `c9d631ca-3a39-44c2-bc50-d38f5177ccf1` | 1,7–3,04 |
+| Taniec 4085→409 | `6485cdeb-1cf2-407b-ab69-3c7c8a757188` | 0,04–0,66 |
+| Selfie 510→511 | `d154b762-9621-4b19-8b5e-d7ff91e4af14` | 0,9–2,34 |
+- Dźwięk zakładania: czysty szum z klipu A (B i C miały podejrzane „Thank you” w whisperze).
+- Koszt wideo: 52 kr. Klatki dodatkowe (201–204): 10 kr.
+- Dalej: akceptacja, potem Topaz 1080p (9 klipów × 3 kr = 27 kr).
