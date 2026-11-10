@@ -140,3 +140,18 @@ Zakładanie od nowa (ta sama osoba i chata co 201): 201 `bd588c3a` (otwór pokaz
 - Dźwięk zakładania: czysty szum z klipu A (B i C miały podejrzane „Thank you” w whisperze).
 - Koszt wideo: 52 kr. Klatki dodatkowe (201–204): 10 kr.
 - Dalej: akceptacja, potem Topaz 1080p (9 klipów × 3 kr = 27 kr).
+
+### Wersja Seedance 2.5 480p (10.11) – `v2_seedance_480p_podglad.mp4` (13,0 s, −14 LUFS)
+Błąd: wcześniej użyty Kling 3.0 std (52 kr w błoto) zamiast Seedance 2.5 480p ze skilla. Analiza konkurencji klatka po klatce przed nowymi promptami:
+- hook: kadr bliżej (crop 80%), ekipa krzyczy razem, koc unoszony w szczyt i opuszczany, zerwanie w bok; okrzyk podany jako audio_reference → Seedance ruszał ustami do „3, 2, 1”;
+- zakładanie: jedno ciągłe ujęcie (maska z czubka w dół, oczy, gogle);
+- śnieżki: nowy kadr 1:1 z konkurencją (nisko przy murze, rzucający z przodu po lewej, cel z tyłu leci na plecy z nogami w górze) – klatka `15e199bf`;
+- taniec: energiczny, biały wpycha się i wypycha bordowego, potem tańczy sam.
+| Ujęcie | Job | Fragment |
+|---|---|---|
+| Hook 5 s (start `83df3585` crop 101, koniec `8b95599c` crop 103, audio `01f97db4`) | `881088f2-0c9c-4ca3-a7d9-f126d7046c03` | 0,20–4,48; okrzyk lokalnie na 0,40 / 1,90 / 2,65, reakcja z klipu od 3,3 s |
+| Zakładanie 4 s (`f4399313`→`130c6503`) | `931f9558-612b-46f5-991d-79dcfd5f4b83` | 0,15–3,07 |
+| Śnieżki 4 s (start `15e199bf`) | `fe7cdb64-fe37-4b31-89df-571ac1081c88` | 0,90–3,10 |
+| Taniec 4 s (`2eebabff`→`d5028a84`, ref `a8d54402`) | `09ef9bfe-c14a-4a6b-bfc3-1f7afac27d3c` | 0,60–2,56 |
+| Selfie 4 s (`efb28167`→`e03a99a2`) | `632e56a3-90d0-4742-99aa-7a7dcd40e998` | 1,60–3,04 |
+Koszt: 5 klipów Seedance ≈ 63 kr + klatki śnieżek 8 kr. Topaz dopiero po akceptacji.
