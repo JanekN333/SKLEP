@@ -64,3 +64,15 @@ Kadry konkurencji z rozmytym napisem wgrane jako wzór: c01 `ba977daf`, c05 `3f1
 | 17 | poza z kijkami pod słońce, maska C | `aa327f90-f605-4338-916d-da3e98aeecf9` |
 | 19 | z okna auta pod Giewontem, maska A | `661a691c-c7b0-41e9-897c-4e73426630f4` |
 Uwaga: 09 ma flagę na kurtce, 12 orła – do ujednolicenia, jeśli będzie widać.
+
+## Klipy Seedance 2.5 480p (10.11) – `podglad_480p.mp4` (14,6 s)
+Dodatkowe klatki zakładania (jak w projektach 1 i 2): 10 `bb5943c0` (maska na czubku, gogle na górze), 11 `23e5ecf0` (prawdziwe oczy w jednym owalu).
+| Ujęcie | Job | W rolce |
+|---|---|---|
+| Sklep 5 s (01→08, ref 05) | `7301c2fd-378f-4807-aadf-c482e9c37b76` | 0–4,55 (gogle spadają 1,9 s, palec, obrót 3,2 s, półka) |
+| Zakładanie 4 s (10→12, ref 11) | `b49ac624-48f0-4572-b53f-28c918ed5d0d` | 0,15–3,40, dźwięk z auta |
+| Trójka 4 s (13) | `b1f3f20d-915e-481c-ab10-f3dccae5431e` | 0,3–1,4, dźwięk ze zjazdu |
+| Zjazd 4 s (15) | `6c6e2154-ccfc-4757-a1c7-961fdbd3a6a2` | 1,85–4,05 (z pyłem śniegu) |
+| Poza 4 s (17) | `85d1bffe-4a08-4279-be55-55304e74d6c6` | 0,3–2,0, dźwięk z auta |
+| Auto 4 s (19) | `6cc71068-b05f-4b94-a4fe-9f55d27486bd` | 0,2–1,9 |
+Koszt: klatki 4+4 kr, klipy 75 kr. Halucynacje whispera („Thank you for watching”) na szumie – dźwięk podmieniony na czysty szum.
