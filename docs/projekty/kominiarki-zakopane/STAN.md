@@ -155,3 +155,9 @@ Błąd: wcześniej użyty Kling 3.0 std (52 kr w błoto) zamiast Seedance 2.5 48
 | Taniec 4 s (`2eebabff`→`d5028a84`, ref `a8d54402`) | `09ef9bfe-c14a-4a6b-bfc3-1f7afac27d3c` | 0,60–2,56 |
 | Selfie 4 s (`efb28167`→`e03a99a2`) | `632e56a3-90d0-4742-99aa-7a7dcd40e998` | 1,60–3,04 |
 Koszt: 5 klipów Seedance ≈ 63 kr + klatki śnieżek 8 kr. Topaz dopiero po akceptacji.
+
+### Poprawki v2 Seedance (10.11) – `v2_seedance_480p_podglad_v2.mp4` (13,5 s)
+- Przyczyna braku zgrania: usta w klipie szły pod okrzyk z referencji, a w montażu przesunąłem słowa. Teraz okrzyk w montażu = dokładnie referencja (`h4_chant`, słowa 0,50 / 1,60 / 2,70 s, media `18fc82e5`).
+- Hook 6 s `204fb29a-7f9c-4098-b645-2f91a90699a5`: start `3b896dce` (ręce trzymają koc od góry), uniesienia od góry ~0,4–0,7 i ~1,2–1,7 s (produktu nie widać), zerwanie 2,85–3,1 s; w rolce 0,20–4,98 (odsłonięcie +0,5 s, reakcja ekipy z klipu).
+- Zakładanie 4 s `e20897bf-3c76-491a-a918-6cf33af3c350`: granatowa kurtka z flagą (klatki `4d36244f` → `17d68e48`, ref oczu `fd8b5438`), jeden owalny otwór bez mostka.
+- Koszt poprawek: 8 kr klatki + 30 kr klipy.
