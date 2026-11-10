@@ -49,3 +49,18 @@ Reguła użytkownika: z każdej rolki 20 ujęć (`extract_frames.py --count 20`,
 
 ## Miro
 Ramka P4 `3458764690017623312` (y = 18600), arkusz 20 ujęć `3458764690023137131`.
+
+## Klatki startowe v1 (10.11, 20 kr) – `klatki_v1.jpg`
+Kadry konkurencji z rozmytym napisem wgrane jako wzór: c01 `ba977daf`, c05 `3f1e3eb6`, c08 `442e1812`, c09 `5a8cb9a7`, c12 `8b3dde9a`, c13 `7f991986`, c15 `fab00467`, c17 `d1def555`, c19 `be1ef6e5`.
+| Ujęcie | Co | Job |
+|---|---|---|
+| 01 | sklep góralski, awatar idzie z goglami | `ba33ec68-e853-4cc5-9777-6cb38a0e2837` |
+| 05 | zdziwiony, wskazuje palcem | `50b258a9-4e54-4436-94ee-1ef7ec0e4d6e` |
+| 08 | półka z pudełkami A/B/C (pas biało-czerwony) | `14c54668-aa4c-4e7e-b6dd-1a160857b95c` |
+| 09 | Szymoszkowa, maska A rozciągnięta przed twarzą, gogle w ręce, granatowa kurtka z flagą | `a0133ce7-a5e2-4ce7-8421-5537f785c6cf` |
+| 12 | maska A założona, gogle na oczach | `d3b7e14c-1561-4b5c-8384-159d68f4d128` |
+| 13 | trójka selfie z dołu A/B/C | `b290312c-5c04-47bd-a216-44a2a12b59e9` |
+| 15 | zjazd POV, czerwona kurtka, maska B | `99cadc9b-d946-40d6-b5bb-be280a077ae5` |
+| 17 | poza z kijkami pod słońce, maska C | `aa327f90-f605-4338-916d-da3e98aeecf9` |
+| 19 | z okna auta pod Giewontem, maska A | `661a691c-c7b0-41e9-897c-4e73426630f4` |
+Uwaga: 09 ma flagę na kurtce, 12 orła – do ujednolicenia, jeśli będzie widać.
