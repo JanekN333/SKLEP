@@ -116,3 +116,6 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
   - H2-2b 1,8 s
   - wyciąg 2,4 s
 - Projekt 3 łącznie: ok. 120 kr.
+
+## FINAŁ 1080p (11.11) – `rolka_final_1080p.mp4` (10,9 s, −14 LUFS, H.264 4.1, AAC 48 kHz)
+Topaz (7 × 3 kr = 21 kr): K1 `8fd7a4b8`, K2 `dece7059`, K3 `11746f68`, H2-1 `f9ccc9e0`, H2-2a `b6451ef1`, H2-2b `6293df84`, K5 `b6e8e3b6`. Cięcia jak podgląd v3, dźwięk wzięty 1:1 z podglądu.
