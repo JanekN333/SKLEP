@@ -119,3 +119,12 @@ Ramka P3-1: `3458764689928563320` (y = 10200).
 
 ## FINAŁ 1080p (11.11) – `rolka_final_1080p.mp4` (10,9 s, −14 LUFS, H.264 4.1, AAC 48 kHz)
 Topaz (7 × 3 kr = 21 kr): K1 `8fd7a4b8`, K2 `dece7059`, K3 `11746f68`, H2-1 `f9ccc9e0`, H2-2a `b6451ef1`, H2-2b `6293df84`, K5 `b6e8e3b6`. Cięcia jak podgląd v3, dźwięk wzięty 1:1 z podglądu.
+
+## Kolejka v2 (18.11) – poprawka realizmu (oczy, maski, światło)
+- Uwaga użytkownika: w K1 oczy sztuczne, maski i światło nie pasują.
+- Klatka startowa (Nano Banana Pro, 4 próby = 8 kr): ref. konkurencji z rozmytym napisem media `9c3d00e5-4877-444d-b075-65735b7a50ce`, produkty A/B/C, wzór realizmu `bea656cf`.
+  - `736878c0` (dobre oczy, zły wzór z przodu, szary panel u 4.) → `335cf51d` (przód B, musztardowa C) → edycja oliwkowego `16e51b12-3558-43cf-a9b4-a2ee8c7e8257` = **klatka finalna**.
+  - Mapa wzorów: czerwony sweter POLSKA = B, musztardowa kurtka = C, oliwkowa bluza = A, bordowa = C.
+- Klip Seedance 2.5 480p 4 s (12 kr): `6e8265c9-424b-4ae4-a93a-850392111a32` – kamera idzie wzdłuż kolejki jak u konkurencji.
+- Whisper: PL „Cześć!” 0–2 s przy no_speech 0,74 → dźwięk zastąpiony tłem sklepu z finalnej rolki (0–1,5 s w pętli).
+- Podgląd: scratchpad `hm_redo/HM_kolejka_v2_480p.mp4`. Czeka na akceptację → Topaz 1080p (3 kr) i podmiana K1 w rolce (0–1,5 s).
