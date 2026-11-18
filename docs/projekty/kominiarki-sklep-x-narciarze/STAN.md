@@ -130,3 +130,4 @@ Topaz (7 × 3 kr = 21 kr): K1 `8fd7a4b8`, K2 `dece7059`, K3 `11746f68`, H2-1 `f9
 - Podgląd: scratchpad `hm_redo/HM_kolejka_v2_480p.mp4`. Czeka na akceptację → Topaz 1080p (3 kr) i podmiana K1 w rolce (0–1,5 s).
 - **v3 (18.11):** uwaga „trzecia postać tragicznie” (oliwkowa bluza: za duże oczy, przerysowany uśmiech wzoru A). Edycja tylko tej postaci → wzór C, oczy naturalnej wielkości: klatka `79e8f201-ae74-4c7d-b5b8-18d9649989e1` (2 próby = 4 kr). Klip Seedance 480p 4 s `e1b76613-361c-4124-8541-c433e258828c` (12 kr). Whisper: „Thank you for watching” / „Cześć” (no_speech 0,53) → dźwięk = tło sklepu. Podgląd `hm_redo/HM_kolejka_v3_480p.mp4`.
   - Mapa wzorów v3: czerwony sweter = B, musztardowa = C, oliwkowa = C, bordowa = B.
+- **v4 (18.11):** uwaga „mruganie nienaturalne” → ten sam start `79e8f201`, prompt: oczy nieruchomo w telefon, bez mrugania. Klip `f29fce28-9f2e-4606-a6a8-c75a05cd2197` (12 kr). Dźwięk = tło sklepu. Podgląd `hm_redo/HM_kolejka_v4_480p.mp4`.
