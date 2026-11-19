@@ -1,0 +1,150 @@
+{
+  "video": "reel.mp4",
+  "duration": 13.0,
+  "width": 576,
+  "height": 1022,
+  "fps": 30.0,
+  "frame_count": 20,
+  "frames": [
+    {
+      "index": 1,
+      "file": "frame_01.png",
+      "time": 0.0,
+      "end": 0.47,
+      "duration": 0.47
+    },
+    {
+      "index": 2,
+      "file": "frame_02.png",
+      "time": 0.47,
+      "end": 0.94,
+      "duration": 0.47
+    },
+    {
+      "index": 3,
+      "file": "frame_03.png",
+      "time": 0.94,
+      "end": 1.41,
+      "duration": 0.47
+    },
+    {
+      "index": 4,
+      "file": "frame_04.png",
+      "time": 1.41,
+      "end": 1.88,
+      "duration": 0.47
+    },
+    {
+      "index": 5,
+      "file": "frame_05.png",
+      "time": 1.88,
+      "end": 2.36,
+      "duration": 0.47
+    },
+    {
+      "index": 6,
+      "file": "frame_06.png",
+      "time": 2.36,
+      "end": 2.83,
+      "duration": 0.47
+    },
+    {
+      "index": 7,
+      "file": "frame_07.png",
+      "time": 2.83,
+      "end": 3.77,
+      "duration": 0.94
+    },
+    {
+      "index": 8,
+      "file": "frame_08.png",
+      "time": 3.77,
+      "end": 4.71,
+      "duration": 0.94
+    },
+    {
+      "index": 9,
+      "file": "frame_09.png",
+      "time": 4.71,
+      "end": 5.65,
+      "duration": 0.94
+    },
+    {
+      "index": 10,
+      "file": "frame_10.png",
+      "time": 5.65,
+      "end": 6.25,
+      "duration": 0.6
+    },
+    {
+      "index": 11,
+      "file": "frame_11.png",
+      "time": 6.25,
+      "end": 6.85,
+      "duration": 0.6
+    },
+    {
+      "index": 12,
+      "file": "frame_12.png",
+      "time": 6.85,
+      "end": 7.45,
+      "duration": 0.6
+    },
+    {
+      "index": 13,
+      "file": "frame_13.png",
+      "time": 7.45,
+      "end": 8.05,
+      "duration": 0.6
+    },
+    {
+      "index": 14,
+      "file": "frame_14.png",
+      "time": 8.05,
+      "end": 8.99,
+      "duration": 0.93
+    },
+    {
+      "index": 15,
+      "file": "frame_15.png",
+      "time": 8.99,
+      "end": 9.92,
+      "duration": 0.93
+    },
+    {
+      "index": 16,
+      "file": "frame_16.png",
+      "time": 9.92,
+      "end": 10.82,
+      "duration": 0.9
+    },
+    {
+      "index": 17,
+      "file": "frame_17.png",
+      "time": 10.82,
+      "end": 11.72,
+      "duration": 0.9
+    },
+    {
+      "index": 18,
+      "file": "frame_18.png",
+      "time": 11.72,
+      "end": 12.34,
+      "duration": 0.62
+    },
+    {
+      "index": 19,
+      "file": "frame_19.png",
+      "time": 12.34,
+      "end": 12.95,
+      "duration": 0.62
+    },
+    {
+      "index": 20,
+      "file": "frame_20.png",
+      "time": 12.95,
+      "end": 13.0,
+      "duration": 0.05
+    }
+  ]
+}
