@@ -136,3 +136,4 @@ Topaz (7 × 3 kr = 21 kr): K1 `8fd7a4b8`, K2 `dece7059`, K3 `11746f68`, H2-1 `f9
   - Klip Seedance 480p 4 s `7d85bc86-ecea-4efc-99f8-639d29abb017` (12 kr). Dźwięk = tło sklepu. Podgląd `hm_redo/HM_kolejka_v5_gogle_480p.mp4`.
 - **FINAŁ v2 (19.11):** Topaz 1080p kolejki v5 `c981e54d-4e48-4287-a634-1a43483dfaed` (3 kr). `rolka_final_1080p.mp4` = nowa kolejka 0–1,5 s + reszta starej rolki od 1,5 s, dźwięk 1:1 ze starej rolki (10,9 s, H.264 High 4.1, AAC 48 kHz, −14,0 LUFS). Stara rolka: scratchpad `hm_redo/rolka_final_1080p_STARA_kolejka.mp4`.
   - Do decyzji: ujęcie 2 (wejście) ma jeszcze stare maski bez gogli.
+- **Poprawka 19.11 (szarpanie/kolory w 1. klipie):** Topaz 24 kl./s był wcześniej dublowany do 30 → teraz minterpolate (mci) do 30 kl./s + hqdn3d czasowy + deflicker (migające odbicia w szybach gogli). Rolka nadpisana.
