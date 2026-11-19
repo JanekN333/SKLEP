@@ -15,3 +15,7 @@ Stan 19.11: wyciągnięte 20 klatek konkurencji (`klatki_konkurencji.jpg`, `fram
 | 14–15 | 7,9–9,8 s | ROZWIĄZANIE: POV o świcie, góry, skrobanie szronu z przedniej szyby |
 | 16–17 | 9,8–11,6 s | skrobanie bocznej szyby z lodowymi wzorami, czysty pas |
 | 18–20 | 11,6–13 s | przednia szyba przed drewnianym domem, czysty pas, druga ręka w śniegu na masce |
+
+## Produkt (19.11)
+- Zdjęcia: `produkt/produkt_1–6.jpg`. Żółto-czarna elektryczna skrobaczka (kopuła z czarną górą, przyciski z boku, wirujący dysk z ostrzami, przezroczysta osłona-podstawka). Uwaga: `produkt_4` pokazuje inny model (żółty z uchwytem jak u konkurencji) – do potwierdzenia.
+- Czekamy na filmik, jak produkt działa.
