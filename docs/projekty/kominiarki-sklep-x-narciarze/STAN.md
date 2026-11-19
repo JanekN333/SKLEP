@@ -134,3 +134,5 @@ Topaz (7 × 3 kr = 21 kr): K1 `8fd7a4b8`, K2 `dece7059`, K3 `11746f68`, H2-1 `f9
 - **v5 GOGLE (19.11):** decyzja użytkownika: wszyscy w goglach (każdy inne), wzory: 1. czerwony POLSKA = A bezzębny (gogle czarne, pomarańczowa szyba), 2. musztardowa = C papieros + wąs (białe, niebieska), 3. oliwkowa = B papieros bez wąsa (czarne, dymiona), 4. bordowa = A (szare, złota), dalej na zmianę.
   - Klatka `705b6df9-10bd-49ba-8053-0c0eeb754c23` (2 próby = 4 kr; `4420ac72` odrzucona – rozmyta plama po napisie z refu konkurencji, nie dawać refu z rozmyciem jako 1. obrazu).
   - Klip Seedance 480p 4 s `7d85bc86-ecea-4efc-99f8-639d29abb017` (12 kr). Dźwięk = tło sklepu. Podgląd `hm_redo/HM_kolejka_v5_gogle_480p.mp4`.
+- **FINAŁ v2 (19.11):** Topaz 1080p kolejki v5 `c981e54d-4e48-4287-a634-1a43483dfaed` (3 kr). `rolka_final_1080p.mp4` = nowa kolejka 0–1,5 s + reszta starej rolki od 1,5 s, dźwięk 1:1 ze starej rolki (10,9 s, H.264 High 4.1, AAC 48 kHz, −14,0 LUFS). Stara rolka: scratchpad `hm_redo/rolka_final_1080p_STARA_kolejka.mp4`.
+  - Do decyzji: ujęcie 2 (wejście) ma jeszcze stare maski bez gogli.
